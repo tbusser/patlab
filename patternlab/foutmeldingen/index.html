@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Foutmeldingen</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/>
+	<link rel="icon" href="http://tbusser.github.io/patlab/static/site/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/styleguide.css">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/solarized_light.css">
+
+	<!--[if (gt IE 8) | (IEMobile)]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/classList.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz-ie.css">
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/addEventListener.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.indexOf.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.forEach.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.isArray.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.create.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.keys.js"></script>
+	<![endif]-->
+
+	<!--[if !IE]> -->
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<!-- <![endif]-->
+	<script src="http://tbusser.github.io/patlab/static/site/js/vendor/modernizr/modernizr.js"></script>
+</head>
+<body class="sg-body">
+	<article>
+		<article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Foutmeldingen overzicht</h1>
+		<p>In het kader van drempelvrij dienen de foutmeldingen boven aan in de pagina getoond te worden.</p>
+		<div class="sg-example">
+			<form action="">
+				<ol class="error-messages">
+					<li><label for="emailadres">Vul aub uw <strong>e-mailadres</strong> in</label></li>
+					<li><label for="telefoon">Pas uw <strong>telefoonnummer</strong> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -</label></li>
+				</ol>
+				<hr>
+				<label for="emailadres">
+					E-mailadres
+					<input type="email" id="emailadres" class="medium-size" aria-required="true" aria-invalid="true">
+					<div class="sub-label">We gebruiken uw e-mailadres alleen om uw vraag te beantwoorden.</div>
+				</label>
+				<label for="telefoon">
+					Uw telefoonnummer
+					<span class="sub-label">(optioneel)</span>
+					<input type="tel" id="telefoon" class="small-size" aria-invalid="true">
+					<div class="sub-label">Soms kunnen we u sneller helpen als we u even persoonlijk spreken.</div>
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error-messages"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"emailadres"</span>&gt;</span>Vul aub uw <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>e-mailadres<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> in<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"telefoon"</span>&gt;</span>Pas uw <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>telefoonnummer<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">hr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"emailadres"</span>&gt;</span>
+            E-mailadres
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"emailadres"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-size"</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-invalid</span>=<span class="hljs-value">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>We gebruiken uw e-mailadres alleen om uw vraag te beantwoorden.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"telefoon"</span>&gt;</span>
+            Uw telefoonnummer
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>(optioneel)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"tel"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"telefoon"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-size"</span> <span class="hljs-attribute">aria-invalid</span>=<span class="hljs-value">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>Soms kunnen we u sneller helpen als we u even persoonlijk spreken.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>De foutmeldingen dienen altijd het eerste element in het form te zijn. Na de foutmeldingen komt er een <code>hr</code>-element die de foutmeldingen scheidt van de invulvelden.</p>
+				<p>De naam van het invulveld waar de foutmelding voor is moet in een <code>strong</code>-element staan.</p>
+				<p>Net zoals bij de labels die bij de invulvelden horen moet ook het label met de foutmelding middels het <code>for</code>-attribuut verwijzen naar het invulveld waar het label bij hoort. Er zijn screenreaders die alleen het eerste gekoppelde label voorlezen bij een invulveld, in dit geval zal de gebruiker de foutmelding te horen krijgen.</p>
+				<p>Input elementen waarvan de invoer ongeldig is moeten het attribuut <code>aria-invalid="true</code> hebben.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Inline foutmeldingen</h1>
+		<p>Foutmeldingen die onder een <code>input</code>-element getoond moeten worden dienen in een <code>div</code>-element te staan. Het <code>div</code>-element moet de class <code>.error-message</code> hebben en het moet in het label element staan.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test1">
+					Uw telefoonnummer
+					<span class="sub-label">(optioneel)</span>
+					<input type="tel" id="test1" class="small-size" aria-invalid="true">
+					<div class="error-message">Pas uw <strong>telefoonnummer</strong> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -</div>
+					<div class="sub-label">Soms kunnen we u sneller helpen als we u even persoonlijk spreken.</div>
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test1"</span>&gt;</span>
+            Uw telefoonnummer
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>(optioneel)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"tel"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test1"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-size"</span> <span class="hljs-attribute">aria-invalid</span>=<span class="hljs-value">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error-message"</span>&gt;</span>Pas uw <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>telefoonnummer<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>Soms kunnen we u sneller helpen als we u even persoonlijk spreken.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes"></div>
+		</div>
+	</section>
+</article>
+	</article>
+	<script src="http://tbusser.github.io/patlab/static/patternlab/code-examples.js"></script>
+		<script src="http://tbusser.github.io/patlab/static/site/js/vendor/jrburke/require.js"></script>
+	<!-- <script src="http://tbusser.github.io/patlab/static/site/js.min/built.js"></script> -->
+	<script>
+		require.config({
+			baseUrl: 'http://tbusser.github.io/patlab/static/site/js/cz',
+			paths: {
+				'jquery': '../vendor/jquery/jquery',
+				'modernizr': '../vendor/modernizr/modernizr-wrapper',
+				'conditioner': '../vendor/rschennink/conditioner',
+				'mmenu': '../vendor/fredheusschen/jquery.mmenu.all',
+				'dynamic-iframe':'../vendor/medicinfo/dyframe',
+				'dynamic-iframe-host':'../vendor/medicinfo/dyframe_host',
+				'twitter-intent': '../vendor/twitter/widgets'
+			}
+		});
+		requirejs(['jquery','conditioner'], function($,conditioner){
+			'use strict';
+			conditioner.loadModules(document);
+		});
+		(function() {
+			'use strict';
+
+			// This array holds the tests for the AMD modules which might be needed. Each entry is an object
+			// with the following properties:
+			//	- mode		: Right now 'all' is the only allowed value, it means the document.querySelectorAll method should be used to
+			//				run the query.
+			//	- query		: The query to run using the querySelectorAll method
+			//	- module	: The name of the module to load when the query returns one or more elements
+			var tests = [
+					{mode: 'all', query: 'div[role="image-placeholder"], img.image-replace', module: 'ui/images-ext'},
+					{mode: 'all', query: '[data-role="explanation"]', module: 'ui/whatsthat'},
+					{mode: 'all', query: '.contact-item-twitter', module: 'twitter-intent'},
+					{mode: 'all', query: '.faq', module: 'ui/faq', name: 'faq'},
+					{mode: 'all', query: '#scroll-top-target', module: 'ui/scrollToTop'},
+					{mode: 'all', query: '[data-scroll-to-target]', module: 'ui/alphabetList'},
+					{mode: 'all', query: '[data-stick-to-top]', module: 'ui/stick-to-top'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe-host'}
+				],
+				modules = []; // This will hold the modules we need to load
+
+			// Loop through the tests
+			for(var index=0,ubound=tests.length; index<ubound; index++) {
+				// Reset the matches flag, it should be false by default
+				var matches = false;
+				// Check if the test mode is 'all'
+				if (tests[index].mode === 'all') {
+					// Use querySelectorAll to run the query, it is a match when the method returned 1 or more items
+					matches = document.querySelectorAll(tests[index].query).length > 0;
+				}
+				// If there is a match we need to store the module in the array of modules to load
+				if (matches) {
+					modules.push(tests[index].module);
+				}
+			}
+			// Check if there are modules to load
+			if (modules.length > 0) {
+				// Load the modules which we've tested and found necessary
+				require(modules, function(modules) {
+					// Loop through the arguments object, it will hold the modules we wanted to load
+					for (var index=0,ubound=arguments.length; index<ubound; index++) {
+						// Create an instance of the module, to do this we need to make sure it is a function
+						if (typeof arguments[index] === 'function') {
+							var module = new arguments[index];
+						}
+					}
+				});
+			}
+
+			// This module doesn't have an instance created, this is why it isn't included in the tests array
+			var hasTwitterIntent = (document.querySelectorAll('.contact-item-twitter').length > 0);
+			if (hasTwitterIntent) {
+				require(['twitter-intent']);
+			}
+			// -ms-viewport in reset.scss zorgt ervoor dat snap mode werkt maar ook voor een bug in ie10 op WP8,
+			// onderstaand script zorgt voor een fix
+			if ('-ms-user-select' in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement('style');
+				msViewportStyle.appendChild(
+					document.createTextNode('@-ms-viewport{width:auto !important;}html.mm-opened.mm-opening .mm-page{height:100% !important;}')
+				);
+				document.getElementsByTagName('head')[0].appendChild(msViewportStyle);
+			}
+		})();
+	</script>
+
+</body>
+</html>

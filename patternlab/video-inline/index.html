@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video (inline)</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/>
+	<link rel="icon" href="http://tbusser.github.io/patlab/static/site/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/styleguide.css">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/solarized_light.css">
+
+	<!--[if (gt IE 8) | (IEMobile)]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/classList.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz-ie.css">
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/addEventListener.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.indexOf.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.forEach.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.isArray.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.create.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.keys.js"></script>
+	<![endif]-->
+
+	<!--[if !IE]> -->
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<!-- <![endif]-->
+	<script src="http://tbusser.github.io/patlab/static/site/js/vendor/modernizr/modernizr.js"></script>
+</head>
+<body class="sg-body">
+	<article>
+		<article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Video (inline)</h1>
+		<div class="sg-example">
+			<!-- Square -->
+			<div class="video-container ratio-square">
+				<iframe src="http://www.youtube.com/embed/j4DGhxsrxZM?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-square third">
+				<iframe src="http://www.youtube.com/embed/j4DGhxsrxZM?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-square fourth">
+				<iframe src="http://www.youtube.com/embed/j4DGhxsrxZM?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<!-- HD -->
+			<div class="video-container ratio-hd">
+				<iframe src="http://www.youtube.com/embed/NgPqm1crD5I?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-hd third">
+				<iframe src="http://www.youtube.com/embed/NgPqm1crD5I?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-hd fourth">
+				<iframe src="http://www.youtube.com/embed/NgPqm1crD5I?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<!-- Wide -->
+			<div class="video-container ratio-wide">
+				<iframe src="http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-wide third">
+				<iframe src="http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-wide fourth">
+				<iframe src="http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+                    <span class="hljs-comment">&lt;!-- Wide --&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-container ratio-wide"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;autohide=2"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-container ratio-wide third"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;autohide=2"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-container ratio-wide fourth"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;autohide=2"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<h2>Ratio</h2>
+				<p>
+					De ratio moet worden opgegeven om de video zonder "letterbox" te tonen. Letterbox is een zwarte balk boven en onder de video.
+				<dl>
+					<dt><code>ratio-square</code></dt><dd>Voor video's met een 4:3 verhouding</dd>
+					<dt><code>ratio-hd</code></dt><dd>HD formaat (16:9). Meest gangbare vorm op YouTube.</dd>
+					<dt><code>ratio-wide</code></dt><dd>Widescreen (2.40:1). Verhouding is voor films, maar in dit geval ook voor de commercial in het voorbeeld.</dd>
+				</dl>
+				</p>
+
+				<h2>Breedte</h2>
+				<p>Voor de breedte van de video kunnen een aantal opties worden gegeven. Op < M worden alle vormen 100% uitgevuld met de breedte van de content.
+				<dl>
+					<dt><code>fourth</code></dt><dd>1/4 van de breedte</dd>
+					<dt><code>third</code></dt><dd>1/3 van de breedte</dd>
+					<dt><code>half</code></dt><dd>1/2 van de breete</dd>
+					<dt><code>full</code></dt><dd>Volledige breedte</dd>
+				</dl>
+				</p>
+
+				<h2>Opties voor YouTube</h2>
+				<p>Voor YouTube is zijn een aantal settings gebruikt om de look & feel aan te passen.
+				<dl>
+					<dt><code>html5=1</code></dt><dd>HTML5 player wordt gebruikt, niet de Flash versie. Ook niet op desktop.</dd>
+					<dt><code>modestbranding=1</code></dt><dd>YouTube logo is alleen even te zien als de video still inlaad. Daarna alleen op interactie te zien.</dd>
+					<dt><code>showinfo=0</code></dt><dd>Geen video titel en andere informatie tonen op de video still</dd>
+					<dt><code>rel=0</code></dt><dd>Geen overzicht van gerelateerde video's laten zien als de video is afgelopen.</dd>
+					<dt><code>autohide=0</code></dt><dd>Verberg de videobar als de video speelt. Op interactie zal de videobar weer getoond worden.</dd>
+				</dl>
+				</p>
+			</div>
+		</div>
+	</section>
+</article>
+	</article>
+	<script src="http://tbusser.github.io/patlab/static/patternlab/code-examples.js"></script>
+		<script src="http://tbusser.github.io/patlab/static/site/js/vendor/jrburke/require.js"></script>
+	<!-- <script src="http://tbusser.github.io/patlab/static/site/js.min/built.js"></script> -->
+	<script>
+		require.config({
+			baseUrl: 'http://tbusser.github.io/patlab/static/site/js/cz',
+			paths: {
+				'jquery': '../vendor/jquery/jquery',
+				'modernizr': '../vendor/modernizr/modernizr-wrapper',
+				'conditioner': '../vendor/rschennink/conditioner',
+				'mmenu': '../vendor/fredheusschen/jquery.mmenu.all',
+				'dynamic-iframe':'../vendor/medicinfo/dyframe',
+				'dynamic-iframe-host':'../vendor/medicinfo/dyframe_host',
+				'twitter-intent': '../vendor/twitter/widgets'
+			}
+		});
+		requirejs(['jquery','conditioner'], function($,conditioner){
+			'use strict';
+			conditioner.loadModules(document);
+		});
+		(function() {
+			'use strict';
+
+			// This array holds the tests for the AMD modules which might be needed. Each entry is an object
+			// with the following properties:
+			//	- mode		: Right now 'all' is the only allowed value, it means the document.querySelectorAll method should be used to
+			//				run the query.
+			//	- query		: The query to run using the querySelectorAll method
+			//	- module	: The name of the module to load when the query returns one or more elements
+			var tests = [
+					{mode: 'all', query: 'div[role="image-placeholder"], img.image-replace', module: 'ui/images-ext'},
+					{mode: 'all', query: '[data-role="explanation"]', module: 'ui/whatsthat'},
+					{mode: 'all', query: '.contact-item-twitter', module: 'twitter-intent'},
+					{mode: 'all', query: '.faq', module: 'ui/faq', name: 'faq'},
+					{mode: 'all', query: '#scroll-top-target', module: 'ui/scrollToTop'},
+					{mode: 'all', query: '[data-scroll-to-target]', module: 'ui/alphabetList'},
+					{mode: 'all', query: '[data-stick-to-top]', module: 'ui/stick-to-top'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe-host'}
+				],
+				modules = []; // This will hold the modules we need to load
+
+			// Loop through the tests
+			for(var index=0,ubound=tests.length; index<ubound; index++) {
+				// Reset the matches flag, it should be false by default
+				var matches = false;
+				// Check if the test mode is 'all'
+				if (tests[index].mode === 'all') {
+					// Use querySelectorAll to run the query, it is a match when the method returned 1 or more items
+					matches = document.querySelectorAll(tests[index].query).length > 0;
+				}
+				// If there is a match we need to store the module in the array of modules to load
+				if (matches) {
+					modules.push(tests[index].module);
+				}
+			}
+			// Check if there are modules to load
+			if (modules.length > 0) {
+				// Load the modules which we've tested and found necessary
+				require(modules, function(modules) {
+					// Loop through the arguments object, it will hold the modules we wanted to load
+					for (var index=0,ubound=arguments.length; index<ubound; index++) {
+						// Create an instance of the module, to do this we need to make sure it is a function
+						if (typeof arguments[index] === 'function') {
+							var module = new arguments[index];
+						}
+					}
+				});
+			}
+
+			// This module doesn't have an instance created, this is why it isn't included in the tests array
+			var hasTwitterIntent = (document.querySelectorAll('.contact-item-twitter').length > 0);
+			if (hasTwitterIntent) {
+				require(['twitter-intent']);
+			}
+			// -ms-viewport in reset.scss zorgt ervoor dat snap mode werkt maar ook voor een bug in ie10 op WP8,
+			// onderstaand script zorgt voor een fix
+			if ('-ms-user-select' in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement('style');
+				msViewportStyle.appendChild(
+					document.createTextNode('@-ms-viewport{width:auto !important;}html.mm-opened.mm-opening .mm-page{height:100% !important;}')
+				);
+				document.getElementsByTagName('head')[0].appendChild(msViewportStyle);
+			}
+		})();
+	</script>
+
+</body>
+</html>

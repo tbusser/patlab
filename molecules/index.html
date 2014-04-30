@@ -1,0 +1,1906 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Molecules</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/>
+	<link rel="icon" href="http://tbusser.github.io/patlab/static/site/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/styleguide.css">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/solarized_light.css">
+
+	<!--[if (gt IE 8) | (IEMobile)]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/classList.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz-ie.css">
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/addEventListener.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.indexOf.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.forEach.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.isArray.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.create.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.keys.js"></script>
+	<![endif]-->
+
+	<!--[if !IE]> -->
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<!-- <![endif]-->
+	<script src="http://tbusser.github.io/patlab/static/site/js/vendor/modernizr/modernizr.js"></script>
+</head>
+<body class="sg-body">
+	<article>
+		<!--
+
+<h2>We have the following molecules:</h2>
+<h3>blocks</h3><ul>
+		<li>
+			<a href="/patternlab/ankeiler">Ankeilers</a>
+		</li><li>
+			<a href="/patternlab/faq">Veelgestelde vraag</a>
+		</li><li>
+			<a href="/patternlab/hero">Hero</a>
+		</li><li>
+			<a href="/patternlab/link-collection">Link collectie</a>
+		</li><li>
+			<a href="/patternlab/video">Video</a>
+		</li><li>
+			<a href="/patternlab/kiyoh">KiyOh</a>
+		</li></ul><h3>media</h3><ul>
+		<li>
+			<a href="/patternlab/images">Responsive plaatjes</a>
+		</li><li>
+			<a href="/patternlab/contentimages">Content afbeeldingen</a>
+		</li><li>
+			<a href="/patternlab/video-inline">Video (inline)</a>
+		</li></ul><h3>overzicht</h3><ul>
+		<li>
+			<a href="/patternlab/overview-prio1">Overzichtblok prio 1</a>
+		</li><li>
+			<a href="/patternlab/overview-prio2">Overzichtblok prio 2</a>
+		</li><li>
+			<a href="/patternlab/overview-prio3">Overzichtblok prio 3</a>
+		</li><li>
+			<a href="/patternlab/overview-product">Productblokken</a>
+		</li></ul><h3>forms</h3><ul>
+		<li>
+			<a href="/patternlab/inputs-labels">Inputs en labels</a>
+		</li><li>
+			<a href="/patternlab/foutmeldingen">Foutmeldingen</a>
+		</li><li>
+			<a href="/patternlab/introductie">Form introductie</a>
+		</li></ul><h3>index</h3><ul>
+		<li>
+			<a href="/patternlab/lijsten">Indexpagina lijsten</a>
+		</li><li>
+			<a href="/patternlab/lettergroep">Indexpagina lettergroepen</a>
+		</li>
+</ul>
+-->
+
+<h1 class="sg-headertitle">Ankeilers</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Standaard Ankeiler</h1>
+		<p>Een standaard ankeiler is een in het geheel klikbaar en laat een titel zien met daarbij een plaatje en/of een paragraaf tekst. Een ankeiler moet altijd in een container met de class <code>gallery</code> staan. <a href="/patternlab/03-organisms/01-ankeilers/01-ankeilers.html">Zie het ankeiler organisme</a> voor een uitwerking.</p>
+		<div class="sg-example">
+			<a href="http://www.cz.nl" class="ankeiler-ext">
+				<h1 class="gamma">Vind de beste zorgverlener bij u in de buurt</h1>
+				<figure>
+					<div role="image-placeholder" data-src="http://placehold.it/{width}x{height}" data-width="340" data-ratio="2.5"></div>
+					<noscript>
+						<img src="http://placehold.it/340x136" alt="">
+					</noscript>
+				</figure>
+				<p>U hebt zorg, hulpmiddelen of medicijnen nodig. Waar kunt u het beste terecht? En liefst zo dicht mogelijk in uw buurt? We helpen u de juiste keuze te maken.</p>
+			</a>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ankeiler-ext"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gamma"</span>&gt;</span>Vind de beste zorgverlener bij u in de buurt<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"image-placeholder"</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"http://placehold.it/{width}x{height}"</span> <span class="hljs-attribute">data-width</span>=<span class="hljs-value">"340"</span> <span class="hljs-attribute">data-ratio</span>=<span class="hljs-value">"2.5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">noscript</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://placehold.it/340x136"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">noscript</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>U hebt zorg, hulpmiddelen of medicijnen nodig. Waar kunt u het beste terecht? En liefst zo dicht mogelijk in uw buurt? We helpen u de juiste keuze te maken.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Het plaatje kan een gewoon <code>img</code> element zijn of een responsive image.</p>
+				<p>De ankeiler kan met plaatje en paragraaf getoond worden maar mag ook met enkel het plaatje of paragraaf worden gebruikt. De titel is wel verplicht.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Payoff ankeiler</h1>
+		<p>Er is een alternatieve vorm voor de ankeiler, een vorm met alleen een titel. In deze vorm zal de titel verticaal in de ankeiler gecentreerd worden.</p>
+		<div class="sg-example">
+			<a href="http://www.cz.nl" class="ankeiler-ext payoff-ankeiler">
+				<h1 class="gamma">Vind de beste zorgverlener bij u in de buurt</h1>
+			</a>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ankeiler-ext payoff-ankeiler"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gamma"</span>&gt;</span>Vind de beste zorgverlener bij u in de buurt<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Net zoals bij de standaard ankeiler is de hele ankeiler klikbaar.</p>
+				<p>De payoff ankeiler krijgt zijn alternative uiterlijk door het toevoegen van de CSS class <code>payoff-ankeiler</code>.</p>
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Veelgestelde vraag</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Veelgestelde vraag</h1>
+		<p>Een faq item kan los gepresenteerd worden maar is hier niet voor bedoeld. Er is rekening gehouden dat faq items altijd in een collectie getoond worden, zie hiervoor <a href="http://tbusser.github.io/patlab/patternlab/faqs">het organisme veelgestelde vragen</a></p>
+		<div class="sg-example">
+			<section class="faq">
+				<h3 class="title">Second opinion: krijg ik dat vergoed?</h3>
+				<div class="faq-content">
+					<p>Een second opinion is gewoon een consult bij een andere arts of tandarts. De kosten hiervan vergoeden wij op dezelfde manier als die van het consult waarover u een tweede mening wilt. Let op: deze second opinion is dus iets anders dan de beoordeling door <a href="#">Best Docters &copy;</a>.</p>
+					<ul>
+						<li>Wachtlijstbemiddeling</li>
+						<li>Second opinion</li>
+						<li>Persoonlijk medisch advies</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"faq"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Dit is de titel van de veelgestelde vraag<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"faq-content"</span>&gt;</span>
+            ...
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+                </code></pre>
+				<pre class="hljs"><code class="hljs javascript">
+    <span class="hljs-keyword">var</span> hasFaqs = (document.querySelectorAll(<span class="hljs-string">'.faq'</span>).length &gt; <span class="hljs-number">0</span>);
+    <span class="hljs-keyword">if</span> (hasFaqs) {
+        <span class="hljs-built_in">require</span>([<span class="hljs-string">'ui/faq'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(Faq)</span> {</span>
+            <span class="hljs-keyword">var</span> faq = <span class="hljs-keyword">new</span> Faq();
+        });
+    }
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Een faq item is zo opgezet dat dit zonder JavaScript volledig werkt en er goed uit ziet. Wanneer JavaScript beschikbaar is zullen de faq items standaard ingeklapt worden weergegeven. Door op de titel van het faq item te klikken kan deze worden geopend / gesloten.</p>
+				<p>Doordat de hele titel van het faq item in een button wordt geplaatst wanneer JavaScript beschikbaar is, is het een groot klikbaar gebied en is er naar toe te navigeren met behulp van het toetsenbord.</p>
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Hero</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Hero</h1>
+		<p>Hero is een blok dat erg opvalt. Een achtergrondplaat dat over de gehele breedte van het scherm loopt. Over de achtergrond plaat kan een tekst blok worden geplaatst. Het blok is met name gemaakt voor gebruik op de homepagina (of landingspagina's)</p>
+
+		<h2>Achtergrond</h2>
+		<p>Per schermgrootte zal de positie van de achtergrondplaat veranderen. De voorkeur is om de focus aan de rechterkant van het midden te houden. Op XS/S zal deze sectie totaal in beeld zijn en de rest buiten het scherm vallen.</p>
+
+		<h2>Tekstblok</h2>
+		<p>In het tekstblok kan een titel worden gezet met een korte beschrijving. Een button met call-to-action is optioneel. De titel en beschrijving kunnen niet te lang zijn, aangezien de achtergrondplaat de hoogte bepaalt.</p>
+
+		<h2>N.B. Developer!</h2>
+		<p>De huidige oplossing, het gebruik van inline styling is verre van ideaal. Zeker als er moet worden voldaan aan de normering van Drempelvrij. Zie de code notities voor verdere informatie.</p>
+
+		<div class="sg-example">
+			<div class="overview-collection prio2">
+				<div class="hero-image" style="background-image:url(/static/site/img/hero_image.jpg);"></div>
+				<div class="break-out">
+					<div class="color-container">
+						<section class="hero-block">
+							<h2 class="title">Waar vindt u de beste zorg?</h2>
+							<p>
+							Zoek op behandeling, aandoening of specialisme.
+							We helpen u de juiste keuze te maken.
+							</p>
+							<a href="#" class="primary-action primary-action-icon">Zoek een zorgverlener</a>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-collection prio2"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hero-image"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-image:url(/static/site/img/hero_image.jpg);"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"break-out"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"color-container"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hero-block"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Waar vindt u de beste zorg?<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+                                    Zoek op behandeling, aandoening of specialisme.
+                                    We helpen u de juiste keuze te maken.
+                                    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"primary-action primary-action-icon"</span>&gt;</span>Zoek een zorgverlener<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>
+				De achtergrondplaat wordt met de `style` attribuut op de `.hero-image` element gezet.
+				Dit is niet de mooiste oplossing, maar wel de simpelste. Te zijner tijden moet er worden gekeken wat een betere oplossing is.
+				</p>
+
+				<h2>JavaScript style vervanging</h2>
+				<p>
+				Niet echt een goede oplossing, aangezien we geen fallback oplossing hebben als er geen JavaScript actief is of niet goed werkt.
+				</p>
+
+				<h2> CSS `attr()`</h2>
+				<p>
+				Op dit moment is het attr() CSS expressie alleen mogelijk op `content`.
+				Hoewel het wel beschreven staat als toepasbaar op alle elementen, zijn er helaas nog geen browsers dit het ondersteunen.
+				Zelfs niet de meest toonaangevende browsers, Chrome & Firefox.
+				</p>
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Link collectie</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Link collectie</h1>
+		<p>Dit molecule kan gebruikt worden om een lijst van gerelateerde links te presenteren.</p>
+		<div class="sg-example">
+			<main class="sg-main">
+				<section class="link-collection">
+					<h1 class="beta">Linklist test</h1>
+					<ul>
+						<li>
+							<a href="/sitecore/shell/~/media/files/documentstore/sitecorecmsimplementationbestpractices.pdf" data-size="(pdf, 481kB)">Document intern op de website</a>
+						</li>
+						<li>
+							<a href="http://www.disney.com" data-size="(excel, 11kB)" data-file-type="excel">Een extern document, niet binnen CZ<span class="external-link"></span></a>
+						</li>
+						<li>
+							<a href="http://www.disney.com">Een link naar een externe website</a>
+						</li>
+						<li>
+							<a href="/consument/zorgverzekering/basisverzekeringen">Link naar een pagina binnen CZ</a>
+						</li>
+					</ul>
+					<a href="#">Dit is een een optionele link naar andere content</a>
+				</section>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"link-collection"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"beta"</span>&gt;</span>Linklist test<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/sitecore/shell/~/media/files/documentstore/sitecorecmsimplementationbestpractices.pdf"</span> <span class="hljs-attribute">data-size</span>=<span class="hljs-value">"(pdf, 481kB)"</span>&gt;</span>Document intern op de website<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.disney.com"</span> <span class="hljs-attribute">data-size</span>=<span class="hljs-value">"(excel, 11kB)"</span> <span class="hljs-attribute">data-file-type</span>=<span class="hljs-value">"excel"</span>&gt;</span>Een extern document, niet binnen CZ<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"external-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.disney.com"</span>&gt;</span>Een link naar een externe website<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/consument/zorgverzekering/basisverzekeringen"</span>&gt;</span>Link naar een pagina binnen CZ<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Dit is een een optionele link naar andere content<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Links naar documenten dienen altijd het attribuut <code>data-size</code> te hebben. Als het een link naar een document is waarbij de extensie niet voorkomt op het einde van de URL dan moet ook het attribuut <code>data-file-type</code> gebruikt worden. Voor dit attribuut worden de waarden <code>excel</code>, <code>pdf</code> en <code>word</code> ondersteund.</p>
+				<p>De link naar andere content is optioneel en hoeft niet gebruikt te worden.</p>
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Video</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Video</h1>
+		<div class="sg-example">
+			<div class="overview-collection prio2">
+				<section class="overview-block">
+					<div class="video-container ratio-wide">
+						<iframe src="http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</section>
+				<section class="overview-block">
+					<div class="video-container ratio-wide">
+						<iframe src="http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</section>
+			</div>
+			<div class="overview-collection prio3">
+				<section class="overview-block">
+					<div class="video-container ratio-square">
+						<iframe src="http://www.youtube.com/embed/j4DGhxsrxZM?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</section>
+				<section class="overview-block">
+					<div class="video-container ratio-hd">
+						<iframe src="http://www.youtube.com/embed/wSosVnweYtE?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</section>
+				<section class="overview-block">
+					<div class="video-container ratio-wide">
+						<iframe src="http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2&wmode=opaque" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-collection prio2"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-container ratio-square"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/j4DGhxsrxZM?html5=1&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;autohide=2&amp;wmode=opaque"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-container ratio-hd"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/wSosVnweYtE?html5=1&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;autohide=2&amp;wmode=opaque"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-container ratio-wide"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;autohide=2&amp;wmode=opaque"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<h2>Ratio</h2>
+				<p>
+					De ratio moet worden opgegeven om de video zonder "letterbox" te tonen. Letterbox is een zwarte balk boven en onder de video.
+				<dl>
+					<dt><code>ratio-square</code></dt><dd>Voor video's met een 4:3 verhouding</dd>
+					<dt><code>ratio-hd</code></dt><dd>HD formaat (16:9). Meest gangbare vorm op YouTube.</dd>
+					<dt><code>ratio-wide</code></dt><dd>Widescreen (2.40:1). Verhouding is voor films, maar in dit geval ook voor de commercial in het voorbeeld.</dd>
+				</dl>
+				</p>
+
+				<h2>Opties voor YouTube</h2>
+				<p>Voor YouTube is zijn een aantal settings gebruikt om de look & feel aan te passen.
+				<dl>
+					<dt><code>html5=1</code></dt><dd>HTML5 player wordt gebruikt, niet de Flash versie. Ook niet op desktop.</dd>
+					<dt><code>modestbranding=1</code></dt><dd>YouTube logo is alleen even te zien als de video still inlaad. Daarna alleen op interactie te zien.</dd>
+					<dt><code>showinfo=0</code></dt><dd>Geen video titel en andere informatie tonen op de video still</dd>
+					<dt><code>rel=0</code></dt><dd>Geen overzicht van gerelateerde video's laten zien als de video is afgelopen.</dd>
+					<dt><code>autohide=2</code></dt><dd>Laat de video controls zien. Verbergen op full screen.</dd>
+					<dt><code>wmode=opaque</code></dt><dd>Als de video in Flash wordt getoond (op ie8 bijvoorbeeld), zorgt deze setting dat de video op de juiste laag blijft en er elementen over de video kunnen staan</dd>
+				</dl>
+				</p>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">KiyOh</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">KiyOh</h1>
+		<p>De KiyOh Klantenbeoordelingen kunnen op drie verschillende wijzen worden getoond. Shortcodes, KiyOh blok of KiyOh lijn</p>
+
+		<h2>Shortcodes</h2>
+		<p>Shortcodes worden in het CMS gezet. Met de de shortcodes kun je de waardering en het aantal beoordelingen in lopende tekst zetten</p>
+
+		<h2>KiyOh blok</h2>
+		<p>Het KiyOh blok (het eerste voorbeeld) heeft een vaste blok layout die niet schaalt.</p>
+
+		<h2>KiyOh lijn</h2>
+		<p>De lijn variant kan tussen blokken in de pagina worden gezet. Het zal meeschalen met de rest van de pagina.</p>
+
+		<div class="sg-example">
+			<section class="kiyoh-block">
+				<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-40"></div>
+				</div>
+				<div class="number-grade">
+					<div class="grade">7,8</div>
+				</div>
+				<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+				</div>
+			</section>
+
+			<section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-00"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-05"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">1.0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-10"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">2.0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-15"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">3.0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-20"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">4.0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-25"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">5.0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-30"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">6.0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-35"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">7.0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-40"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">8.0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-45"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">9.0</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section><section class="kiyoh-line">
+					<div class="star-grade">
+					<div class="stars back"></div>
+					<div class="stars front star-50"></div>
+					</div>
+					<div class="number-grade">
+					<div class="grade">10</div>
+					</div>
+					<div class="to-reviews">
+					<a href="http://www.kiyoh.nl">3338 klantenbeoordelingen op kiyOh</a>
+					</div>
+				</section>
+
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+            <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kiyoh-line"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"star-grade"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"stars back"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"stars front star-45"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"number-grade"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grade"</span>&gt;</span>8,7<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"to-reviews"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.kiyoh.nl"</span>&gt;</span>3338 klantenbeoordelingen op kiyOh<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kiyoh-line"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"star-grade"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"stars back"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"stars front"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width: 87%;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"number-grade"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grade"</span>&gt;</span>8,7<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"to-reviews"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.kiyoh.nl"</span>&gt;</span>3338 klantenbeoordelingen op kiyOh<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kiyoh-block"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"star-grade"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"stars back"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"stars front star-40"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"number-grade"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grade"</span>&gt;</span>7,8<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"to-reviews"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.kiyoh.nl"</span>&gt;</span>3338 klantenbeoordelingen op kiyOh<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<h2>Waardering</h2>
+				<p>
+					De numerieke waardering wordt bij de div `grade` gezet op een schaal van 1-10 met maximaal 1 cijfer achter de komma.
+				</p>
+
+				<h2>Trapsgewijze sterren</h2>
+				<p>
+					Met de <code>star-XX</code> klassen kunnen de sterren trapsgewijs worden aangezet. De klassen lopen van star-00 t/m star-50 met tussenliggende stappen van 5 (00/05/10/15/20..enz) uiteindelijk dus 10 stappen
+					om gelijk te stellen met de waardering die bij KiyOh wordt opgehaald.
+				</p>
+
+				<h2>Traploze sterren</h2>
+				<p>
+					Voor het weergeven van een exacte waardering in sterren moet bij de tag `stars front` in het stijl attribuut de waardering in procenten worden gezet (op de gebruikelijke schaal van 0-100%).
+				</p>
+				<p>
+					<strong>Dit is niet de standaard manier om de sterren weer te geven</strong>
+				</p>
+
+				<h2>XML Stream</h2>
+				<p>
+					De stream wordt door de backend 1 keer per dag uitgelezen, verwerkt en opgeslagen in de database. Zo beperken we client-side connecties. De data zal in de loop van 24 uur niet ontzettend veel veranderen, dus redelijk up-to-date op deze manier.
+					De XML stream is voorzien van alle gegevens, alle data is zonder bewerking te verkrijgen.
+				</p>
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Responsive plaatjes</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Responsive plaatjes</h1>
+		<p>Het plaatje hieronder zal 50% van de breedte in beslag nemen. Wanneer de breedte wordt aangepast zal het script gaan kijken of er een ander formaat van het plaatje nodig is om een scherp beeld te leveren. Hierbij wordt ook rekening gehouden met responsive schermen, de resolutie van het plaatje zal dan verdubbeld worden.</p>
+		<p>Bij deze oplossing gaan we er vanuit dat de server die de plaatjes serveert het plaatje in (vrijwel ieder) willekeurig formaat kan teruggeven. De gewenste afmeting voor het plaatje moet middels de URL kunnen worden aangegeven.</p>
+		<p>Wanneer er geen JavaScript beschikbaar is zal het plaatje in een vooraf vastgelegde resolutie worden getoond, in dit voorbeeld is dat 340px bij 191px, en zal dat geschaald zal worden.</p>
+		<div class="sg-example">
+			<figure>
+				<img src="" alt="Een placeholder image met de resolutie van het img element" class="image-replace" data-width="340" data-src="http://www.placehold.it/{width}x{height}" data-ratio="1.77777778" style="width:50%;">
+				<noscript>
+					<img src="http://www.placehold.it/340x191" alt="Een placeholder image met de resolutie van het img element" style="width:50%;">
+				</noscript>
+			</figure>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-replace"</span> <span class="hljs-attribute">data-width</span>=<span class="hljs-value">"340"</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"http://www.placehold.it/{width}x{height}"</span> <span class="hljs-attribute">data-ratio</span>=<span class="hljs-value">"1.77777778"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:50%;"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">noscript</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.placehold.it/340x191"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:50%;"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">noscript</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+                </code></pre>
+				<pre class="hljs"><code class="hljs javascript">
+    <span class="hljs-keyword">var</span> hasResponsiveImages = (document.querySelectorAll(<span class="hljs-string">'div[role="image-placeholder"]'</span>).length &gt; <span class="hljs-number">0</span>) || (document.querySelectorAll(<span class="hljs-string">'img.image-replace'</span>).length &gt; <span class="hljs-number">0</span>);
+    <span class="hljs-keyword">if</span> (hasResponsiveImages) {
+        <span class="hljs-built_in">require</span>([<span class="hljs-string">'ui/images-ext'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(ResponsiveImages)</span> {</span>
+            <span class="hljs-keyword">var</span> images = <span class="hljs-keyword">new</span> ResponsiveImages();
+        });
+    }
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Door het <code>img</code>-element in een <code>figure</code>-element te wrappen kunnen we makkelijk een fallback toevoegen voor wanneer er geen JavaScript beschikbaar is.</p>
+				<p>In het attribuut <code>data-src</code> dient de URL te staan waarmee in Javascript een nieuwe URL voor het gewenste formaat gemaakt kan worden. In de URL kan gebruik gemaakt worden van de placeholders <code>{height}</code> en <code>{width}</code>, deze zullen worden vervangen door de daadwerkelijke waarden.</p>
+				<p>Het <code>data-ratio</code> attribuut is optioneel, wanneer deze niet wordt opgegeven zal het plaatje worden opgevraagd met enkel de breedte te parameter. Het is dan aan de server om te bepalen hoe hoog het plaatje moet worden.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Responsive plaatjes met art direction</h1>
+		<p>Naast het opvragen van het plaatje in een bepaald formaat is het ook mogelijk om aan te geven dat er art direction is toegepast op het plaatje. In de browser zal dan worden bepaald in welk breakpoint de website zich bevindt en dit meegeven aan de server wanneer het plaatje voor het formaat wordt opgevraagd.</p>
+		<p>In het voorbeeld hieronder wordt in het plaatje getoond in welk breakpoint zich bevindt.</p>
+		<div class="sg-example">
+			<figure>
+				<img src="" alt="Een placeholder image met de resolutie van het img element en het breakpoint waarin de site zich bevindt" class="image-replace" data-width="340" data-src="http://www.placehold.it/{width}x{height}" data-ratio="3" style="width:100%;" data-art-direction="1">
+				<noscript>
+					<img src="http://www.placehold.it/340x191" alt="Een placeholder image met de resolutie van het img element" style="width:100%;">
+				</noscript>
+			</figure>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-replace"</span> <span class="hljs-attribute">data-width</span>=<span class="hljs-value">"340"</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"http://www.placehold.it/{width}x{height}"</span> <span class="hljs-attribute">data-ratio</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:100%;"</span> <span class="hljs-attribute">data-art-direction</span>=<span class="hljs-value">"1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">noscript</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.placehold.it/340x191"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:100%;"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">noscript</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Er kan aangegeven worden dat art direction beschikbaar is voor het plaatje door middel van het attribuut <code>data-art-direction="1"</code>.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Lazy loaded responsive plaatjes</h1>
+		<p>De responsive plaatjes kunnen ook door middel van <strong>lazy loading</strong> worden ingeladen. Hierbij wordt in de HTML het plaatje als een <code>div</code>-element opgezet. Wanneer het <code>div</code>-element bijna zichtbaar is in de viewport wordt dit middels JavaScript omgezet naar een responsive plaatje.</p>
+		<div class="sg-example">
+			<div>
+				<figure>
+					<div role="image-placeholder" data-src="http://placehold.it/{width}x{height}" data-width="500" data-ratio="2.5"></div>
+					<noscript>
+						<img src="http://placehold.it/340x191" alt="">
+					</noscript>
+				</figure>
+
+			</div>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"image-placeholder"</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"http://placehold.it/{width}x{height}"</span> <span class="hljs-attribute">data-width</span>=<span class="hljs-value">"500"</span> <span class="hljs-attribute">data-ratio</span>=<span class="hljs-value">"2.5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">noscript</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://placehold.it/340x191"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">noscript</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Content afbeeldingen</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Content afbeeldingen</h1>
+		<p>Plaatjes die binnen het <code>main</code>-element staan krijgen standaard 100% breedte. Het is mogelijk om de plaatjes smaller te maken door het toepassen van een van de volgende classes:</p>
+		<dl>
+			<dt>half</dt>
+			<dd>dit maakt het plaatje 50% breed t.o.v. de content</dd>
+			<dt>third</dt>
+			<dd>dit maakt het plaatje 33% breed t.o.v. de content</dd>
+			<dt>fourth</dt>
+			<dd>dit maakt het plaatje 25% breed t.o.v. de content</dd>
+		</dl>
+		<div class="sg-example">
+			<main class="sg-main">
+				<figure>
+					<img src="" alt="Een placeholder image met de resolutie van het img element" class="image-replace" data-src="http://www.placehold.it/{width}x{height}&text=volledige+breedte" data-ratio="1.77777778">
+					<noscript>
+						<img src="http://www.placehold.it/340x191" alt="Een placeholder image met de resolutie van het img element">
+					</noscript>
+				</figure>
+				<figure>
+					<img src="" alt="Een placeholder image met de resolutie van het img element" class="half image-replace" data-src="http://www.placehold.it/{width}x{height}&text=halve+breedte" data-ratio="1.77777778">
+					<noscript>
+						<img src="http://www.placehold.it/340x191" alt="Een placeholder image met de resolutie van het img element" class="half">
+					</noscript>
+				</figure>
+				<figure>
+					<img src="" alt="Een placeholder image met de resolutie van het img element" class="third image-replace" data-src="http://www.placehold.it/{width}x{height}&text=een+derde+breedte" data-ratio="1.77777778">
+					<noscript>
+						<img src="http://www.placehold.it/340x191" alt="Een placeholder image met de resolutie van het img element" class="third">
+					</noscript>
+				</figure>
+				<figure>
+					<img src="" alt="Een placeholder image met de resolutie van het img element" class="fourth image-replace" data-src="http://www.placehold.it/{width}x{height}&text=een+vierde+breedte" data-ratio="1.77777778">
+					<noscript>
+						<img src="http://www.placehold.it/340x191" alt="Een placeholder image met de resolutie van het img element" class="fourth">
+					</noscript>
+				</figure>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs makefile">
+    &lt;figure&gt;
+        &lt;img src=<span class="hljs-string">""</span> alt=<span class="hljs-string">"Een placeholder image met de resolutie van het img element"</span> class=<span class="hljs-string">"image-replace"</span> data-src=<span class="hljs-string">"http://www.placehold.it/{width}x{height}&amp;text=volledige+breedte"</span> data-ratio=<span class="hljs-string">"1.77777778"</span>&gt;
+        &lt;noscript&gt;
+            &lt;img src=<span class="hljs-string">"http://www.placehold.it/340x191"</span> alt=<span class="hljs-string">"Een placeholder image met de resolutie van het img element"</span>&gt;
+        &lt;/noscript&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;img src=<span class="hljs-string">""</span> alt=<span class="hljs-string">"Een placeholder image met de resolutie van het img element"</span> class=<span class="hljs-string">"half image-replace"</span> data-src=<span class="hljs-string">"http://www.placehold.it/{width}x{height}&amp;text=halve+breedte"</span> data-ratio=<span class="hljs-string">"1.77777778"</span>&gt;
+        &lt;noscript&gt;
+            &lt;img src=<span class="hljs-string">"http://www.placehold.it/340x191"</span> alt=<span class="hljs-string">"Een placeholder image met de resolutie van het img element"</span> class=<span class="hljs-string">"half"</span>&gt;
+        &lt;/noscript&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;img src=<span class="hljs-string">""</span> alt=<span class="hljs-string">"Een placeholder image met de resolutie van het img element"</span> class=<span class="hljs-string">"third image-replace"</span> data-src=<span class="hljs-string">"http://www.placehold.it/{width}x{height}&amp;text=een+derde+breedte"</span> data-ratio=<span class="hljs-string">"1.77777778"</span>&gt;
+        &lt;noscript&gt;
+            &lt;img src=<span class="hljs-string">"http://www.placehold.it/340x191"</span> alt=<span class="hljs-string">"Een placeholder image met de resolutie van het img element"</span> class=<span class="hljs-string">"third"</span>&gt;
+        &lt;/noscript&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;img src=<span class="hljs-string">""</span> alt=<span class="hljs-string">"Een placeholder image met de resolutie van het img element"</span> class=<span class="hljs-string">"fourth image-replace"</span> data-src=<span class="hljs-string">"http://www.placehold.it/{width}x{height}&amp;text=een+vierde+breedte"</span> data-ratio=<span class="hljs-string">"1.77777778"</span>&gt;
+        &lt;noscript&gt;
+            &lt;img src=<span class="hljs-string">"http://www.placehold.it/340x191"</span> alt=<span class="hljs-string">"Een placeholder image met de resolutie van het img element"</span> class=<span class="hljs-string">"fourth"</span>&gt;
+        &lt;/noscript&gt;
+    &lt;/figure&gt;
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Video (inline)</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Video (inline)</h1>
+		<div class="sg-example">
+			<!-- Square -->
+			<div class="video-container ratio-square">
+				<iframe src="http://www.youtube.com/embed/j4DGhxsrxZM?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-square third">
+				<iframe src="http://www.youtube.com/embed/j4DGhxsrxZM?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-square fourth">
+				<iframe src="http://www.youtube.com/embed/j4DGhxsrxZM?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<!-- HD -->
+			<div class="video-container ratio-hd">
+				<iframe src="http://www.youtube.com/embed/NgPqm1crD5I?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-hd third">
+				<iframe src="http://www.youtube.com/embed/NgPqm1crD5I?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-hd fourth">
+				<iframe src="http://www.youtube.com/embed/NgPqm1crD5I?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<!-- Wide -->
+			<div class="video-container ratio-wide">
+				<iframe src="http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-wide third">
+				<iframe src="http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="video-container ratio-wide fourth">
+				<iframe src="http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&modestbranding=1&showinfo=0&rel=0&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+                    <span class="hljs-comment">&lt;!-- Wide --&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-container ratio-wide"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;autohide=2"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-container ratio-wide third"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;autohide=2"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"video-container ratio-wide fourth"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.youtube.com/embed/tWqCQCI3kBs?html5=1&amp;modestbranding=1&amp;showinfo=0&amp;rel=0&amp;autohide=2"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<h2>Ratio</h2>
+				<p>
+					De ratio moet worden opgegeven om de video zonder "letterbox" te tonen. Letterbox is een zwarte balk boven en onder de video.
+				<dl>
+					<dt><code>ratio-square</code></dt><dd>Voor video's met een 4:3 verhouding</dd>
+					<dt><code>ratio-hd</code></dt><dd>HD formaat (16:9). Meest gangbare vorm op YouTube.</dd>
+					<dt><code>ratio-wide</code></dt><dd>Widescreen (2.40:1). Verhouding is voor films, maar in dit geval ook voor de commercial in het voorbeeld.</dd>
+				</dl>
+				</p>
+
+				<h2>Breedte</h2>
+				<p>Voor de breedte van de video kunnen een aantal opties worden gegeven. Op < M worden alle vormen 100% uitgevuld met de breedte van de content.
+				<dl>
+					<dt><code>fourth</code></dt><dd>1/4 van de breedte</dd>
+					<dt><code>third</code></dt><dd>1/3 van de breedte</dd>
+					<dt><code>half</code></dt><dd>1/2 van de breete</dd>
+					<dt><code>full</code></dt><dd>Volledige breedte</dd>
+				</dl>
+				</p>
+
+				<h2>Opties voor YouTube</h2>
+				<p>Voor YouTube is zijn een aantal settings gebruikt om de look & feel aan te passen.
+				<dl>
+					<dt><code>html5=1</code></dt><dd>HTML5 player wordt gebruikt, niet de Flash versie. Ook niet op desktop.</dd>
+					<dt><code>modestbranding=1</code></dt><dd>YouTube logo is alleen even te zien als de video still inlaad. Daarna alleen op interactie te zien.</dd>
+					<dt><code>showinfo=0</code></dt><dd>Geen video titel en andere informatie tonen op de video still</dd>
+					<dt><code>rel=0</code></dt><dd>Geen overzicht van gerelateerde video's laten zien als de video is afgelopen.</dd>
+					<dt><code>autohide=0</code></dt><dd>Verberg de videobar als de video speelt. Op interactie zal de videobar weer getoond worden.</dd>
+				</dl>
+				</p>
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Overzichtblok prio 1</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Overzichtblok, prioriteit 1</h1>
+		<p>Dit is een prioriteit 1 overzichtblok. Per overzichtspagina kunnen meerdere prioriteit 1 blokken worden opgenomen. Een prio1 blok moet altijd in een <code>break-out</code> container staan met een <code>color-container</code></p>
+		<div class="sg-example">
+			<main class="sg-main">
+				<div class="break-out">
+					<div class="color-container">
+						<div class="overview-collection prio1">
+							<section class="overview-block">
+								<div class="image-container">
+									<figure>
+										<img src="" alt="Een placeholder image met de resolutie van het img element" class="image-replace" data-width="340" data-src="http://www.placehold.it/{width}x{height}" data-ratio="1.77777778" style="width:100%;">
+										<noscript>
+											<img src="http://www.placehold.it/340x191" alt="Een placeholder image met de resolutie van het img element">
+										</noscript>
+									</figure>
+								</div>
+								<div>
+									<h2 class="title">Heeft uw zorgverlener een contract met ons?</h2>
+									<p>Controleer of uw zorgverlener met ons afspraken heeft gemaakt over de kwaliteit en prijzen. Of zoek andere goede zorgverleners bij u in de buurt.</p>
+									<a href="#" class="primary-action primary-action-icon">Zoek een zorgverlener</a>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-collection prio1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-container"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-replace"</span> <span class="hljs-attribute">data-width</span>=<span class="hljs-value">"340"</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"http://www.placehold.it/{width}x{height}"</span> <span class="hljs-attribute">data-ratio</span>=<span class="hljs-value">"1.77777778"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:100%;"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">noscript</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.placehold.it/340x191"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">noscript</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Heeft uw zorgverlener een contract met ons?<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Controleer of uw zorgverlener met ons afspraken heeft gemaakt over de kwaliteit en prijzen. Of zoek andere goede zorgverleners bij u in de buurt.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"primary-action primary-action-icon"</span>&gt;</span>Zoek een zorgverlener<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Op small en extra small loopt het plaatje van rand tot rand, dit is niet goed zichtbaar in het voorbeeld hierboven.</p>
+				<p>Het voorbeeld hierboven laat de standaard achtergrondkleur zien. Er zijn nog twee kleur varianten die gebruikt kunnen worden, deze kunnen worden gebruikt door het toepassen van de class <code>tandarts</code> of <code>basis</code> op het element met de class <code>color-container</code>.</p>
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Overzichtblok prio 2</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Overzichtblok, prioriteit 2</h1>
+		<p>Een prioriteit 2 blok kan gevuld worden met een plaatje, paragraaf tekst, opsommingen en een secondaire actie knop of een combinatie van deze elementen. Zie het origanisme voor hoe meerdere prioriteit 2 blokken gegroepeerd kunnen worden.</p>
+		<div class="sg-example">
+			<div class="overview-collection prio2">
+				<section class="overview-block">
+					<figure>
+						<img src="" alt="Een placeholder image met de resolutie van het img element" class="image-replace" data-width="340" data-src="http://www.placehold.it/{width}x{height}" data-ratio="1.77777778" style="width:100%;">
+						<noscript>
+							<img src="http://www.placehold.it/340x191" alt="Een placeholder image met de resolutie van het img element">
+						</noscript>
+					</figure>
+					<h2 class="title">Hulp bij zorg in het ziekenhuis 3.1</h2>
+					<p>Second opinion, medisch advies of hulp bij het vinden van de juiste zorginstanties nodig? Onze zorgadviseurs helpen u graag.</p>
+					<ul>
+						<li><a href="http://www.cz.nl">Wachtlijstbemiddeling</a></li>
+						<li><a href="http://www.cz.nl">Second opinion</a></li>
+						<li><a href="http://www.cz.nl">Persoonlijk medisch advies</a></li>
+						<li><a href="http://www.cz.nl">Zorg regelen</a></li>
+					</ul>
+					<a href="#" class="secondary-action-button">Bekijk al onze diensten</a>
+				</section>
+			</div>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-collection prio2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-replace"</span> <span class="hljs-attribute">data-width</span>=<span class="hljs-value">"340"</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"http://www.placehold.it/{width}x{height}"</span> <span class="hljs-attribute">data-ratio</span>=<span class="hljs-value">"1.77777778"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:100%;"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">noscript</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.placehold.it/340x191"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">noscript</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Hulp bij zorg in het ziekenhuis 3.1<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Second opinion, medisch advies of hulp bij het vinden van de juiste zorginstanties nodig? Onze zorgadviseurs helpen u graag.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span>&gt;</span>Wachtlijstbemiddeling<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span>&gt;</span>Second opinion<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span>&gt;</span>Persoonlijk medisch advies<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span>&gt;</span>Zorg regelen<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary-action-button"</span>&gt;</span>Bekijk al onze diensten<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Overzichtblok prio 3</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Overzichtblok, prioriteit 3</h1>
+		<p>Een prioriteit 3 is in bijna alle opzichten hetzelfde als een prioriteit 2 blok. Het enige verschil is dat een prioriteit 3 blok maar 1/3 van de breedte inneemt.</p>
+		<div class="sg-example">
+			<div class="overview-collection prio3">
+				<section class="overview-block">
+					<figure>
+						<img src="" alt="Een placeholder image met de resolutie van het img element" class="image-replace" data-width="340" data-src="http://www.placehold.it/{width}x{height}" data-ratio="1.77777778" style="width:100%;">
+						<noscript>
+							<img src="http://www.placehold.it/340x191" alt="Een placeholder image met de resolutie van het img element">
+						</noscript>
+					</figure>
+					<h2 class="title">Hulp bij zorg in het ziekenhuis 3.1</h2>
+					<p>Second opinion, medisch advies of hulp bij het vinden van de juiste zorginstanties nodig? Onze zorgadviseurs helpen u graag.</p>
+					<ul>
+						<li><a href="http://www.cz.nl">Wachtlijstbemiddeling</a></li>
+						<li><a href="http://www.cz.nl">Second opinion</a></li>
+						<li><a href="http://www.cz.nl">Persoonlijk medisch advies</a></li>
+						<li><a href="http://www.cz.nl">Zorg regelen</a></li>
+					</ul>
+					<a href="#" class="secondary-action-button">Bekijk al onze diensten</a>
+				</section>
+			</div>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-collection prio3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-replace"</span> <span class="hljs-attribute">data-width</span>=<span class="hljs-value">"340"</span> <span class="hljs-attribute">data-src</span>=<span class="hljs-value">"http://www.placehold.it/{width}x{height}"</span> <span class="hljs-attribute">data-ratio</span>=<span class="hljs-value">"1.77777778"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:100%;"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">noscript</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://www.placehold.it/340x191"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Een placeholder image met de resolutie van het img element"</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">noscript</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Hulp bij zorg in het ziekenhuis 3.1<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Second opinion, medisch advies of hulp bij het vinden van de juiste zorginstanties nodig? Onze zorgadviseurs helpen u graag.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span>&gt;</span>Wachtlijstbemiddeling<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span>&gt;</span>Second opinion<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span>&gt;</span>Persoonlijk medisch advies<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.cz.nl"</span>&gt;</span>Zorg regelen<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary-action-button"</span>&gt;</span>Bekijk al onze diensten<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Speciale prio3 blokken</h1>
+		<p>Er zijn een aantal speciale prioriteit 3 blokken. Deze blokken hebben een eigen class die op het element met de class <code>overview-block</code> gezet kan worden. Door het toepassen van één van deze classes krijgt het prioriteit 3 blok een icoon.</p>
+		<div class="sg-example">
+			<div class="overview-collection prio3">
+				<section class="overview-block overstappen">
+					<h2 class="title">Overstappen</h2>
+				</section>
+				<section class="overview-block snelle-uitbetaling">
+					<h2 class="title">Snelle uitbetaling</h2>
+				</section>
+				<section class="overview-block online-declareren">
+					<h2 class="title">Online declareren</h2>
+				</section>
+			</div>
+			<div class="overview-collection prio3">
+				<section class="overview-block eigen-risico">
+					<h2 class="title">Eigen risico</h2>
+				</section>
+				<section class="overview-block zorgadvies">
+					<h2 class="title">Zorgadvies</h2>
+				</section>
+				<section class="overview-block mijn-cz">
+					<h2 class="title">Mijn CZ</h2>
+				</section>
+			</div>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-collection prio3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block overstappen"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Overstappen<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block snelle-uitbetaling"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Snelle uitbetaling<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block online-declareren"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Online declareren<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-collection prio3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block eigen-risico"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Eigen risico<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block zorgadvies"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Zorgadvies<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-block mijn-cz"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title"</span>&gt;</span>Mijn CZ<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                </code></pre>
+			</div>
+		</div>
+
+	</section>
+</article><h1 class="sg-headertitle">Productblokken</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Productblokken</h1>
+		<div class="sg-example">
+			<main class="sg-main">
+				<div class="overview-collection prio3">
+					<section class="product-block basis" aria-labeledby="title_basis">
+						<header>
+							<h2 id="title_basis" aria-hidden="true"><div>Basis-</div>verzekering</h2>
+							vanaf
+							<span class="alpha">71,92</span>
+							per maand in 2014
+						</header>
+						<ul>
+							<li>Wettelijk verplichte verzekering</li>
+							<li>Meest noodzakelijke vergoedingen</li>
+							<li>Keuze uit 3 verzekeringen</li>
+						</ul>
+						<a href="#" class="secondary-action-button"><div>Bekijk basis-</div>verzekeringen</a>
+						Of: <a href="#">Bereken uw premie</a>
+					</section>
+
+					<section class="product-block" aria-labeledby="title_aanvullend">
+						<header>
+							<h2 id="title_aanvullend" aria-hidden="true"><div>Aanvullende</div>verzekering</h2>
+							vanaf
+							<span class="alpha">7,05</span>
+							per maand in 2014
+						</header>
+						<ul>
+							<li>Niet verplichte, extra verzekering</li>
+							<li>Meer en ruimere vergoedingen</li>
+							<li>Keuze uit 6 verzekeringen</li>
+						</ul>
+						<a href="#" class="secondary-action-button">Bekijk aanvullende verzekeringen</a>
+						Of: <a href="#">Bereken uw premie</a>
+					</section>
+
+					<section class="product-block tandarts" aria-labeledby="title_tandarts">
+						<header>
+							<h2 id="title_tandarts" aria-hidden="true"><div>Tandarts</div>verzekering</h2>
+							vanaf
+							<span class="alpha">17,55</span>
+							per maand in 2014
+						</header>
+						<ul>
+							<li>Niet verplichte, extra verzekering</li>
+							<li>Specialistische zorg voor uw gebit</li>
+							<li>Keuze uit 2 verzekeringen</li>
+						</ul>
+						<a href="#" class="secondary-action-button">Bekijk tandarts-verzekeringen</a>
+						Of: <a href="#">Bereken uw premie</a>
+					</section>
+				</div>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"overview-collection prio3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"product-block basis"</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"title_basis"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"title_basis"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Basis-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>verzekering<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                vanaf
+                <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alpha"</span>&gt;</span>71,92<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                per maand in 2014
+            <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Wettelijk verplichte verzekering<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Meest noodzakelijke vergoedingen<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Keuze uit 3 verzekeringen<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary-action-button"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Bekijk basis-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>verzekeringen<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            Of: <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Bereken uw premie<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"product-block"</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"title_aanvullend"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"title_aanvullend"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Aanvullende<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>verzekering<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                vanaf
+                <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alpha"</span>&gt;</span>7,05<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                per maand in 2014
+            <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Niet verplichte, extra verzekering<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Meer en ruimere vergoedingen<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Keuze uit 6 verzekeringen<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary-action-button"</span>&gt;</span>Bekijk aanvullende verzekeringen<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            Of: <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Bereken uw premie<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"product-block tandarts"</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"title_tandarts"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"title_tandarts"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Tandarts<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>verzekering<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                vanaf
+                <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alpha"</span>&gt;</span>17,55<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                per maand in 2014
+            <span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Niet verplichte, extra verzekering<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Specialistische zorg voor uw gebit<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Keuze uit 2 verzekeringen<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary-action-button"</span>&gt;</span>Bekijk tandarts-verzekeringen<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            Of: <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Bereken uw premie<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Iedere sectie dat een product vertegenwoordigd dient het attribuut <code>aria-labeledby</code> te hebben dat verwijst naar de productnaam. Het element waarin de productnaam staat moet vervolgens het attribuut <code>aria-hidden="true"</code> hebben.</p>
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Inputs en labels</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Wrap inputs</h1>
+		<p>De formulierstyling zegt dat inputs onder het bijbehorende label dienen te staan. Hierdoor is het mogelijk om de input altijd te wrappen in het label. Dit heeft nog een aantal andere voordelen die verderop besproken zullen worden.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test1">
+					Dit is het label van onderstaande input
+					<input type="text" id="test1">
+				</label>
+				<label for="test2">
+					Dit is een label met een medium size input
+					<input type="text" id="test2" class="medium-size">
+				</label>
+				<label for="test3">
+					Dit is een label met een small size input
+					<input type="text" id="test3" class="small-size">
+				</label>
+				<label for="test6">
+					<input type="checkbox" id="test6">Bij een checkbox komt de label tekst ná het input element.
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test1"</span>&gt;</span>
+            Dit is het label van onderstaande input
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test2"</span>&gt;</span>
+            Dit is een label met een medium size input
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test2"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-size"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test3"</span>&gt;</span>
+            Dit is een label met een small size input
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test3"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-size"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Zorg er voor dat een label altijd een geldige waarde in het <code>for</code>-attribuut heeft staan. Dit dient altijd te refereren aan het input element dat erbij hoort. Screenreaders hebben deze informatie nodig om te weten welk label er voorgelezen moet worden.</p>
+				<p>Er zijn drie maten beschikbaar voor de inputs:</p>
+				<ul>
+					<li>Full size, hier is geen extra class voor nodig. Standaard neemt een input de volledige breedte in.</li>
+					<li>Medium size, hier is de class <code>medium-size</code> voor nodig. Het input veld zal nu 60% van de beschikbare breedte innemen. Wanneer de breedte van de viewport in de breakpoints XS of S valt zal de input 100% breed zijn.</li>
+					<li>Small size, hier is de class <code>small-size</code> voor nodig. Het input veld zal nu 30% van de beschikbare breedte innemen. Wanneer de breedte van de viewport in de breakpoints XS of S valt zal de input 100% breed zijn.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Verplichte velden</h1>
+		<p>Verplichte velden worden niet extra gemarkeerd met tekst daar we uitleggen dat standaard alle invulvelden verplicht zijn. Wel dienen deze velden een extra aria attribuut te krijgen, te weten <code>aria-required="true"</code>.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test4">
+					E-mailadres
+					<input type="email" id="test4" class="medium-size" aria-required="true">
+					<div class="sub-label">We gebruiken uw e-mailadres alleen om uw vraag te beantwoorden.</div>
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test4"</span>&gt;</span>
+            E-mailadres
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test4"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-size"</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>We gebruiken uw e-mailadres alleen om uw vraag te beantwoorden.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Optionele velden</h1>
+		<p>Standaard zijn alle velden in een formulier verplicht, enkel de optionele velden dienen als zodanig gemarkeerd te worden.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test4">
+					Uw telefoonnummer <span class="sub-label">(optioneel)</span>
+					<input type="text" type="test4">
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test4"</span>&gt;</span>
+            Uw telefoonnummer <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>(optioneel)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"test4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Additionele aanwijzingen</h1>
+		<p>Wanneer een invulveld extra aanwijzingen nodig heeft dan dienen deze binnen het label maar na het input element geplaatst te worden.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test5">
+					CZ relatienummer <span class="sub-label">(optioneel)</span>
+					<input type="text" id="test5">
+					<div class="sub-label">U vindt uw relatienummer op uw polis en uw CZ Zorgpas.</div>
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test5"</span>&gt;</span>
+            CZ relatienummer <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>(optioneel)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test5"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>U vindt uw relatienummer op uw polis en uw CZ Zorgpas.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Door de extra aanwijzing op deze manier op te nemen in het label wordt deze automatisch uitgesproken door screenreaders wanneer het invulveld de focus krijgt.</p>
+			</div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Foutmeldingen</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Foutmeldingen overzicht</h1>
+		<p>In het kader van drempelvrij dienen de foutmeldingen boven aan in de pagina getoond te worden.</p>
+		<div class="sg-example">
+			<form action="">
+				<ol class="error-messages">
+					<li><label for="emailadres">Vul aub uw <strong>e-mailadres</strong> in</label></li>
+					<li><label for="telefoon">Pas uw <strong>telefoonnummer</strong> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -</label></li>
+				</ol>
+				<hr>
+				<label for="emailadres">
+					E-mailadres
+					<input type="email" id="emailadres" class="medium-size" aria-required="true" aria-invalid="true">
+					<div class="sub-label">We gebruiken uw e-mailadres alleen om uw vraag te beantwoorden.</div>
+				</label>
+				<label for="telefoon">
+					Uw telefoonnummer
+					<span class="sub-label">(optioneel)</span>
+					<input type="tel" id="telefoon" class="small-size" aria-invalid="true">
+					<div class="sub-label">Soms kunnen we u sneller helpen als we u even persoonlijk spreken.</div>
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error-messages"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"emailadres"</span>&gt;</span>Vul aub uw <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>e-mailadres<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> in<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"telefoon"</span>&gt;</span>Pas uw <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>telefoonnummer<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">hr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"emailadres"</span>&gt;</span>
+            E-mailadres
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"emailadres"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-size"</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-invalid</span>=<span class="hljs-value">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>We gebruiken uw e-mailadres alleen om uw vraag te beantwoorden.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"telefoon"</span>&gt;</span>
+            Uw telefoonnummer
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>(optioneel)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"tel"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"telefoon"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-size"</span> <span class="hljs-attribute">aria-invalid</span>=<span class="hljs-value">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>Soms kunnen we u sneller helpen als we u even persoonlijk spreken.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>De foutmeldingen dienen altijd het eerste element in het form te zijn. Na de foutmeldingen komt er een <code>hr</code>-element die de foutmeldingen scheidt van de invulvelden.</p>
+				<p>De naam van het invulveld waar de foutmelding voor is moet in een <code>strong</code>-element staan.</p>
+				<p>Net zoals bij de labels die bij de invulvelden horen moet ook het label met de foutmelding middels het <code>for</code>-attribuut verwijzen naar het invulveld waar het label bij hoort. Er zijn screenreaders die alleen het eerste gekoppelde label voorlezen bij een invulveld, in dit geval zal de gebruiker de foutmelding te horen krijgen.</p>
+				<p>Input elementen waarvan de invoer ongeldig is moeten het attribuut <code>aria-invalid="true</code> hebben.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Inline foutmeldingen</h1>
+		<p>Foutmeldingen die onder een <code>input</code>-element getoond moeten worden dienen in een <code>div</code>-element te staan. Het <code>div</code>-element moet de class <code>.error-message</code> hebben en het moet in het label element staan.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test1">
+					Uw telefoonnummer
+					<span class="sub-label">(optioneel)</span>
+					<input type="tel" id="test1" class="small-size" aria-invalid="true">
+					<div class="error-message">Pas uw <strong>telefoonnummer</strong> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -</div>
+					<div class="sub-label">Soms kunnen we u sneller helpen als we u even persoonlijk spreken.</div>
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test1"</span>&gt;</span>
+            Uw telefoonnummer
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>(optioneel)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"tel"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test1"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-size"</span> <span class="hljs-attribute">aria-invalid</span>=<span class="hljs-value">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error-message"</span>&gt;</span>Pas uw <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>telefoonnummer<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>Soms kunnen we u sneller helpen als we u even persoonlijk spreken.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes"></div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Form introductie</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Form introductie tekst</h1>
+		<p>Voor drempelvrij dienen een aantal zaken kenbaar gemaakt te worden aan het begin van het formulier, hier is een container class voor.</p>
+		<div class="sg-example">
+			<main class="sg-main">
+				<form action="">
+					<div class="introduction">
+						<h2>Wat doen we met uw gegevens?</h2>
+						<p>Webrichtlijnen 2, principe Universeel schrijft voor dat vooraf aangegeven moet worden hoe persoonsgevens verwerkt worden.</p>
+						<p class="sub-label">Alle velden zijn verplicht, behalve de velden waar '(optioneel)' bij staat.</p>
+					</div>
+					<hr>
+					<label for="question">
+						Uw vraag
+						<textarea name="" id="question" cols="30" rows="10"></textarea>
+					</label>
+				</form>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"introduction"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Wat doen we met uw gegevens?<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Webrichtlijnen 2, principe Universeel schrijft voor dat vooraf aangegeven moet worden hoe persoonsgevens verwerkt worden.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>Alle velden zijn verplicht, behalve de velden waar '(optioneel)' bij staat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">hr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"question"</span>&gt;</span>
+            Uw vraag
+            <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"question"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"30"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"10"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>De class <code>introduction</code> zorgt er voor dat het element met de class <code>sub-label</code> een maximale breedte van 100% kan krijgen.</p>
+				<p>De introductie wordt altijd gescheiden van de invulvelden door een <code>hr</code>-element.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Introductie tekst en foutmeldingen</h1>
+		<p>Indien er een introductie tekst is en er zijn foutmeldingen op het form dan dienen de foutmeldingen eerst te komen.</p>
+		<div class="sg-example">
+			<main class="sg-main">
+				<form action="#">
+					<ol class="error-messages">
+						<li><label for="emailadres">Vul aub uw <strong>e-mailadres</strong> in</label></li>
+						<li><label for="telefoon">Pas uw <strong>telefoonnummer</strong> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -</label></li>
+					</ol>
+					<hr>
+					<div class="introduction">
+						<h2>Wat doen we met uw gegevens?</h2>
+						<p>Webrichtlijnen 2, principe Universeel schrijft voor dat vooraf aangegeven moet worden hoe persoonsgevens verwerkt worden.</p>
+						<p class="sub-label">Alle velden zijn verplicht, behalve de velden waar '(optioneel)' bij staat.</p>
+					</div>
+					<hr>
+					<label for="question">
+						Uw vraag
+						<textarea name="" id="question" cols="30" rows="10"></textarea>
+					</label>
+				</form>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"#"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error-messages"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"emailadres"</span>&gt;</span>Vul aub uw <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>e-mailadres<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> in<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"telefoon"</span>&gt;</span>Pas uw <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>telefoonnummer<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> aan. Een geldig telefoonnummer kent alleen cijfers en de tekens () + -<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">hr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"introduction"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Wat doen we met uw gegevens?<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Webrichtlijnen 2, principe Universeel schrijft voor dat vooraf aangegeven moet worden hoe persoonsgevens verwerkt worden.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>Alle velden zijn verplicht, behalve de velden waar '(optioneel)' bij staat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">hr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"question"</span>&gt;</span>
+            Uw vraag
+            <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"question"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"30"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"10"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+		</div>
+		<div class="sg-notes"></div>
+	</section>
+</article><h1 class="sg-headertitle">Indexpagina lijsten</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Alfabet lijst</h1>
+		<div class="sg-example">
+			<main class="sg-main">
+				<span class="visuallyhidden" aria-hidden="true" id="index-label">Selecteer de beginletter van de vergoeding</span>
+				<ol class="alphabet-list" aria-labeledby="index-label">
+					<li><a href="#a">a</a></li>
+					<li><a href="#b">b</a></li>
+					<li><a href="#c">c</a></li>
+					<li><a href="#d">d</a></li>
+					<li><a href="#e">e</a></li>
+					<li><a href="#f">f</a></li>
+					<li><a href="#g">g</a></li>
+					<li><a href="#h">h</a></li>
+					<li><a href="#i">i</a></li>
+					<li><a href="#j">j</a></li>
+					<li><a href="#k">k</a></li>
+					<li><a href="#l">l</a></li>
+					<li><a href="#m">m</a></li>
+					<li><a href="#n">n</a></li>
+					<li><a href="#o">o</a></li>
+					<li><a href="#p">p</a></li>
+					<li><a href="#q">q</a></li>
+					<li><a href="#r">r</a></li>
+					<li><a href="#s">s</a></li>
+					<li><a href="#t">t</a></li>
+					<li><a href="#u">u</a></li>
+					<li><a href="#v">v</a></li>
+					<li><a href="#w">w</a></li>
+					<li><a href="#x">x</a></li>
+					<li><a href="#y">y</a></li>
+					<li><a href="#z">z</a></li>
+					<li><a href="#num">#</a></li>
+				</ol>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"visuallyhidden"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"index-label"</span>&gt;</span>Selecteer de beginletter van de vergoeding<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alphabet-list"</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"index-label"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#a"</span>&gt;</span>a<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#b"</span>&gt;</span>b<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#c"</span>&gt;</span>c<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#d"</span>&gt;</span>d<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#e"</span>&gt;</span>e<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        ...
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#z"</span>&gt;</span>z<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#num"</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Dubbele letter</h1>
+		<p>Indien nodig is het mogelijk om een letter de ruimte van 2 items in te laten nemen. Gebruik hier de class <code>double-letter</code> voor op het <code>a</code>- of <code>span</code>-element.</p>
+		<div class="sg-example">
+			<main class="sg-main">
+				<span class="visuallyhidden" aria-hidden="true" id="index-label2">Selecteer de beginletter van de vergoeding</span>
+				<ol class="alphabet-list" aria-labeledby="index-label2">
+					<li><a href="#a">a</a></li>
+					<li><a href="#b">b</a></li>
+					<li><a href="#c">c</a></li>
+					<li><a href="#d">d</a></li>
+					<li><a href="#e">e</a></li>
+					<li><a href="#f">f</a></li>
+					<li><a href="#g">g</a></li>
+					<li><a href="#h">h</a></li>
+					<li><a href="#i">i</a></li>
+					<li><a href="#j">j</a></li>
+					<li><a href="#k">k</a></li>
+					<li><a href="#l">l</a></li>
+					<li><a href="#m">m</a></li>
+					<li><a href="#n">n</a></li>
+					<li><a href="#o">o</a></li>
+					<li><a href="#p">p</a></li>
+					<li><a href="#q">q</a></li>
+					<li><a href="#r">r</a></li>
+					<li><a href="#s">s</a></li>
+					<li><a href="#t">t</a></li>
+					<li><a href="#u">u</a></li>
+					<li><a href="#v">v</a></li>
+					<li><a href="#w">w</a></li>
+					<li><a href="#x">x</a></li>
+					<li><a href="#y">y</a></li>
+					<li><a href="#z">z</a></li>
+					<li><a class="double-letter" href="#num">0 &hellip; 9</a></li>
+				</ol>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alphabet-list"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#a"</span>&gt;</span>a<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#b"</span>&gt;</span>b<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#c"</span>&gt;</span>c<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#d"</span>&gt;</span>d<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#e"</span>&gt;</span>e<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        ...
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#z"</span>&gt;</span>z<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"double-letter"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#num"</span>&gt;</span>0 … 9<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Letter zonder items</h1>
+		<p>Wanneer een letter uit de lijst niet verwijst naar een content block, bijvoorbeeld om dat er geen woorden met de letter 'c' beginnen, dan moet de letter geen link zijn.</p>
+		<div class="sg-example">
+			<main class="sg-main">
+				<ol class="alphabet-list">
+					<li><a href="#a">a</a></li>
+					<li><a href="#b">b</a></li>
+					<li><span>c</span></li>
+					<li><a href="#d">d</a></li>
+					<li><a href="#e">e</a></li>
+				</ol>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alphabet-list"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#a"</span>&gt;</span>a<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#b"</span>&gt;</span>b<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>c<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#d"</span>&gt;</span>d<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#e"</span>&gt;</span>e<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Top 5 lijst</h1>
+		<p>De uitlijning aan de linkerkant is afwijkend van een normale gesorteerde lijst.</p>
+		<div class="sg-example">
+			<main class="sg-main">
+				<h2 class="gamma">Top 5 vergoedingen</h2>
+				<ol class="top5">
+					<li><a href="#">Fysiotherapie</a></li>
+					<li><a href="#">Tandarts</a></li>
+					<li><a href="#">Alternatieve geneeswijzen</a></li>
+					<li><a href="#">Kraamzorg</a></li>
+					<li><a href="#">Bril en contactlenzen</a></li>
+				</ol>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gamma"</span>&gt;</span>Top 5 vergoedingen<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"top5"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Fysiotherapie<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Tandarts<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Alternatieve geneeswijzen<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Kraamzorg<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Bril en contactlenzen<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes"></div>
+		</div>
+	</section>
+</article><h1 class="sg-headertitle">Indexpagina lettergroepen</h1><article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Lettergroepen</h1>
+		<div class="sg-example">
+			<main class="sg-main" id="scroll-top-target">
+				<ol class="lettergroup">
+					<li id="a" aria-labeledby="a-title">
+						<h2 id="a-title" aria-hidden="true"><span class="visuallyhidden">Vergoedingen die beginnen met de letter </span>A</h2>
+						<ol>
+							<li><a href="#">Aangepast bed</a></li>
+							<li><a href="#">Aangepaste stoel</a></li>
+							<li><a href="#">Aangepaste tafel</a></li>
+							<li><a href="#">Acnebehandeling</a></li>
+							<li><a href="#">Advies door sportarts</a></li>
+						</ol>
+						<a href="#scroll-top-target" class="scroll-to-top"><span>Naar boven</span></a>
+					</li>
+					<li id="b" aria-labeledby="b-title">
+						<h2 id="b-title" aria-hidden="true"><span class="visuallyhidden">Vergoedingen die beginnen met de letter </span>B</h2>
+						<ol>
+							<li><a href="#">Aangepast bed</a></li>
+							<li><a href="#">Aangepaste stoel</a></li>
+							<li><a href="#">Aangepaste tafel</a></li>
+							<li><a href="#">Acnebehandeling</a></li>
+							<li><a href="#">Advies door sportarts</a></li>
+						</ol>
+						<a href="#scroll-top-target" class="scroll-to-top"><span>Naar boven</span></a>
+					</li>
+					<li id="d" aria-labeledby="d-title">
+						<h2 id="d-title" aria-hidden="true"><span class="visuallyhidden">Vergoedingen die beginnen met de letter </span>D</h2>
+						<ol>
+							<li><a href="#">Daisy apparatuur</a></li>
+							<li><a href="#">Diabetesmateriaal</a></li>
+							<li><a href="#">Dialyse</a></li>
+							<li><a href="#">Dieetadvies</a></li>
+							<li><a href="#">Dyslexiezorg</a></li>
+						</ol>
+						<a href="#scroll-top-target" class="scroll-to-top"><span>Naar boven</span></a>
+					</li>
+					<li id="num" aria-labeledby="num-title">
+						<h2 id="num-title" aria-hidden="true"><span class="visuallyhidden">Vergoedingen die beginnen met de letter </span>#</h2>
+						<ol>
+							<li><a href="#">1<sup>ste</sup> lijns zorg</a></li>
+						</ol>
+						<a href="#scroll-top-target" class="scroll-to-top"><span>Naar boven</span></a>
+					</li>
+				</ol>
+			</main>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+                <span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lettergroup"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"a"</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"a-title"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"a-title"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"visuallyhidden"</span>&gt;</span>Vergoedingen die beginnen met de letter <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>A<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Aangepast bed<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Aangepaste stoel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Aangepaste tafel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Acnebehandeling<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Advies door sportarts<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#scroll-top-target"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"scroll-to-top"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Naar boven<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"b"</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"b-title"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"b-title"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"visuallyhidden"</span>&gt;</span>Vergoedingen die beginnen met de letter <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>B<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Aangepast bed<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Aangepaste stoel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Aangepaste tafel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Acnebehandeling<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Advies door sportarts<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#scroll-top-target"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"scroll-to-top"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Naar boven<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"d"</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"d-title"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"d-title"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"visuallyhidden"</span>&gt;</span>Vergoedingen die beginnen met de letter <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>D<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Daisy apparatuur<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Diabetesmateriaal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Dialyse<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Dieetadvies<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Dyslexiezorg<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#scroll-top-target"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"scroll-to-top"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Naar boven<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"num"</span> <span class="hljs-attribute">aria-labeledby</span>=<span class="hljs-value">"num-title"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"num-title"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"visuallyhidden"</span>&gt;</span>Vergoedingen die beginnen met de letter <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>1<span class="hljs-tag">&lt;<span class="hljs-title">sup</span>&gt;</span>ste<span class="hljs-tag">&lt;/<span class="hljs-title">sup</span>&gt;</span> lijns zorg<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#scroll-top-target"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"scroll-to-top"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Naar boven<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>De <code>li</code>-elementen van de buitenste lijst dienen middens het ARIA attribuut <code>aria-labeledby</code> gekoppeld worden aan het <code>H2</code>-element dat in het <code>li</code>-element staat. Dit gaat op basis van het <code>id</code>-attribuut. Hierdoor zal een screenreader die ARIA ondersteund de tekst uit het <code>H2</code>-element voorlezen wanneer het <code>li</code>-element de focus krijgt.</p>
+
+				<p>De <code>H2</code>-elementen dienen het attribuut <code>aria-hidden="true"</code> te krijgen. In screenreaders die ARIA ondersteunen zal de tekst in het <code>H2</code>-element niet nogmaals worden voorgelezen.</p>
+
+				<p>Ieder <code>li</code>-element onder de lijst met de class <code>lettergroup</code> heeft als laatste element een anchor element waarmee de gebruiker makkelijk terug kan naar de top van de pagina. Deze anchor elementen worden verwijderd als JavaScript beschikbaar is en de scrollToTop module is gestart. De losse anchor elementen worden dan vervangen door één enkele knop om mee naar boven te gaan.</p>
+			</div>
+		</div>
+	</section>
+</article>
+	</article>
+	<script src="http://tbusser.github.io/patlab/static/patternlab/code-examples.js"></script>
+		<script src="http://tbusser.github.io/patlab/static/site/js/vendor/jrburke/require.js"></script>
+	<!-- <script src="http://tbusser.github.io/patlab/static/site/js.min/built.js"></script> -->
+	<script>
+		require.config({
+			baseUrl: 'http://tbusser.github.io/patlab/static/site/js/cz',
+			paths: {
+				'jquery': '../vendor/jquery/jquery',
+				'modernizr': '../vendor/modernizr/modernizr-wrapper',
+				'conditioner': '../vendor/rschennink/conditioner',
+				'mmenu': '../vendor/fredheusschen/jquery.mmenu.all',
+				'dynamic-iframe':'../vendor/medicinfo/dyframe',
+				'dynamic-iframe-host':'../vendor/medicinfo/dyframe_host',
+				'twitter-intent': '../vendor/twitter/widgets'
+			}
+		});
+		requirejs(['jquery','conditioner'], function($,conditioner){
+			'use strict';
+			conditioner.loadModules(document);
+		});
+		(function() {
+			'use strict';
+
+			// This array holds the tests for the AMD modules which might be needed. Each entry is an object
+			// with the following properties:
+			//	- mode		: Right now 'all' is the only allowed value, it means the document.querySelectorAll method should be used to
+			//				run the query.
+			//	- query		: The query to run using the querySelectorAll method
+			//	- module	: The name of the module to load when the query returns one or more elements
+			var tests = [
+					{mode: 'all', query: 'div[role="image-placeholder"], img.image-replace', module: 'ui/images-ext'},
+					{mode: 'all', query: '[data-role="explanation"]', module: 'ui/whatsthat'},
+					{mode: 'all', query: '.contact-item-twitter', module: 'twitter-intent'},
+					{mode: 'all', query: '.faq', module: 'ui/faq', name: 'faq'},
+					{mode: 'all', query: '#scroll-top-target', module: 'ui/scrollToTop'},
+					{mode: 'all', query: '[data-scroll-to-target]', module: 'ui/alphabetList'},
+					{mode: 'all', query: '[data-stick-to-top]', module: 'ui/stick-to-top'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe-host'}
+				],
+				modules = []; // This will hold the modules we need to load
+
+			// Loop through the tests
+			for(var index=0,ubound=tests.length; index<ubound; index++) {
+				// Reset the matches flag, it should be false by default
+				var matches = false;
+				// Check if the test mode is 'all'
+				if (tests[index].mode === 'all') {
+					// Use querySelectorAll to run the query, it is a match when the method returned 1 or more items
+					matches = document.querySelectorAll(tests[index].query).length > 0;
+				}
+				// If there is a match we need to store the module in the array of modules to load
+				if (matches) {
+					modules.push(tests[index].module);
+				}
+			}
+			// Check if there are modules to load
+			if (modules.length > 0) {
+				// Load the modules which we've tested and found necessary
+				require(modules, function(modules) {
+					// Loop through the arguments object, it will hold the modules we wanted to load
+					for (var index=0,ubound=arguments.length; index<ubound; index++) {
+						// Create an instance of the module, to do this we need to make sure it is a function
+						if (typeof arguments[index] === 'function') {
+							var module = new arguments[index];
+						}
+					}
+				});
+			}
+
+			// This module doesn't have an instance created, this is why it isn't included in the tests array
+			var hasTwitterIntent = (document.querySelectorAll('.contact-item-twitter').length > 0);
+			if (hasTwitterIntent) {
+				require(['twitter-intent']);
+			}
+			// -ms-viewport in reset.scss zorgt ervoor dat snap mode werkt maar ook voor een bug in ie10 op WP8,
+			// onderstaand script zorgt voor een fix
+			if ('-ms-user-select' in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement('style');
+				msViewportStyle.appendChild(
+					document.createTextNode('@-ms-viewport{width:auto !important;}html.mm-opened.mm-opening .mm-page{height:100% !important;}')
+				);
+				document.getElementsByTagName('head')[0].appendChild(msViewportStyle);
+			}
+		})();
+	</script>
+
+</body>
+</html>

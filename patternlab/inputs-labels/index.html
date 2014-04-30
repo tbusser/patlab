@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inputs en labels</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/>
+	<link rel="icon" href="http://tbusser.github.io/patlab/static/site/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/styleguide.css">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/solarized_light.css">
+
+	<!--[if (gt IE 8) | (IEMobile)]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/classList.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz-ie.css">
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/addEventListener.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.indexOf.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.forEach.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.isArray.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.create.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.keys.js"></script>
+	<![endif]-->
+
+	<!--[if !IE]> -->
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<!-- <![endif]-->
+	<script src="http://tbusser.github.io/patlab/static/site/js/vendor/modernizr/modernizr.js"></script>
+</head>
+<body class="sg-body">
+	<article>
+		<article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Wrap inputs</h1>
+		<p>De formulierstyling zegt dat inputs onder het bijbehorende label dienen te staan. Hierdoor is het mogelijk om de input altijd te wrappen in het label. Dit heeft nog een aantal andere voordelen die verderop besproken zullen worden.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test1">
+					Dit is het label van onderstaande input
+					<input type="text" id="test1">
+				</label>
+				<label for="test2">
+					Dit is een label met een medium size input
+					<input type="text" id="test2" class="medium-size">
+				</label>
+				<label for="test3">
+					Dit is een label met een small size input
+					<input type="text" id="test3" class="small-size">
+				</label>
+				<label for="test6">
+					<input type="checkbox" id="test6">Bij een checkbox komt de label tekst ná het input element.
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test1"</span>&gt;</span>
+            Dit is het label van onderstaande input
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test2"</span>&gt;</span>
+            Dit is een label met een medium size input
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test2"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-size"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test3"</span>&gt;</span>
+            Dit is een label met een small size input
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test3"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-size"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Zorg er voor dat een label altijd een geldige waarde in het <code>for</code>-attribuut heeft staan. Dit dient altijd te refereren aan het input element dat erbij hoort. Screenreaders hebben deze informatie nodig om te weten welk label er voorgelezen moet worden.</p>
+				<p>Er zijn drie maten beschikbaar voor de inputs:</p>
+				<ul>
+					<li>Full size, hier is geen extra class voor nodig. Standaard neemt een input de volledige breedte in.</li>
+					<li>Medium size, hier is de class <code>medium-size</code> voor nodig. Het input veld zal nu 60% van de beschikbare breedte innemen. Wanneer de breedte van de viewport in de breakpoints XS of S valt zal de input 100% breed zijn.</li>
+					<li>Small size, hier is de class <code>small-size</code> voor nodig. Het input veld zal nu 30% van de beschikbare breedte innemen. Wanneer de breedte van de viewport in de breakpoints XS of S valt zal de input 100% breed zijn.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Verplichte velden</h1>
+		<p>Verplichte velden worden niet extra gemarkeerd met tekst daar we uitleggen dat standaard alle invulvelden verplicht zijn. Wel dienen deze velden een extra aria attribuut te krijgen, te weten <code>aria-required="true"</code>.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test4">
+					E-mailadres
+					<input type="email" id="test4" class="medium-size" aria-required="true">
+					<div class="sub-label">We gebruiken uw e-mailadres alleen om uw vraag te beantwoorden.</div>
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test4"</span>&gt;</span>
+            E-mailadres
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test4"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-size"</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>We gebruiken uw e-mailadres alleen om uw vraag te beantwoorden.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Optionele velden</h1>
+		<p>Standaard zijn alle velden in een formulier verplicht, enkel de optionele velden dienen als zodanig gemarkeerd te worden.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test4">
+					Uw telefoonnummer <span class="sub-label">(optioneel)</span>
+					<input type="text" type="test4">
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test4"</span>&gt;</span>
+            Uw telefoonnummer <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>(optioneel)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"test4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+		</div>
+	</section>
+
+	<section class="sg-section">
+		<h1 class="sg-subheader">Additionele aanwijzingen</h1>
+		<p>Wanneer een invulveld extra aanwijzingen nodig heeft dan dienen deze binnen het label maar na het input element geplaatst te worden.</p>
+		<div class="sg-example">
+			<form action="">
+				<label for="test5">
+					CZ relatienummer <span class="sub-label">(optioneel)</span>
+					<input type="text" id="test5">
+					<div class="sub-label">U vindt uw relatienummer op uw polis en uw CZ Zorgpas.</div>
+				</label>
+			</form>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"test5"</span>&gt;</span>
+            CZ relatienummer <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>(optioneel)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"test5"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sub-label"</span>&gt;</span>U vindt uw relatienummer op uw polis en uw CZ Zorgpas.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+				<p>Door de extra aanwijzing op deze manier op te nemen in het label wordt deze automatisch uitgesproken door screenreaders wanneer het invulveld de focus krijgt.</p>
+			</div>
+		</div>
+	</section>
+</article>
+	</article>
+	<script src="http://tbusser.github.io/patlab/static/patternlab/code-examples.js"></script>
+		<script src="http://tbusser.github.io/patlab/static/site/js/vendor/jrburke/require.js"></script>
+	<!-- <script src="http://tbusser.github.io/patlab/static/site/js.min/built.js"></script> -->
+	<script>
+		require.config({
+			baseUrl: 'http://tbusser.github.io/patlab/static/site/js/cz',
+			paths: {
+				'jquery': '../vendor/jquery/jquery',
+				'modernizr': '../vendor/modernizr/modernizr-wrapper',
+				'conditioner': '../vendor/rschennink/conditioner',
+				'mmenu': '../vendor/fredheusschen/jquery.mmenu.all',
+				'dynamic-iframe':'../vendor/medicinfo/dyframe',
+				'dynamic-iframe-host':'../vendor/medicinfo/dyframe_host',
+				'twitter-intent': '../vendor/twitter/widgets'
+			}
+		});
+		requirejs(['jquery','conditioner'], function($,conditioner){
+			'use strict';
+			conditioner.loadModules(document);
+		});
+		(function() {
+			'use strict';
+
+			// This array holds the tests for the AMD modules which might be needed. Each entry is an object
+			// with the following properties:
+			//	- mode		: Right now 'all' is the only allowed value, it means the document.querySelectorAll method should be used to
+			//				run the query.
+			//	- query		: The query to run using the querySelectorAll method
+			//	- module	: The name of the module to load when the query returns one or more elements
+			var tests = [
+					{mode: 'all', query: 'div[role="image-placeholder"], img.image-replace', module: 'ui/images-ext'},
+					{mode: 'all', query: '[data-role="explanation"]', module: 'ui/whatsthat'},
+					{mode: 'all', query: '.contact-item-twitter', module: 'twitter-intent'},
+					{mode: 'all', query: '.faq', module: 'ui/faq', name: 'faq'},
+					{mode: 'all', query: '#scroll-top-target', module: 'ui/scrollToTop'},
+					{mode: 'all', query: '[data-scroll-to-target]', module: 'ui/alphabetList'},
+					{mode: 'all', query: '[data-stick-to-top]', module: 'ui/stick-to-top'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe-host'}
+				],
+				modules = []; // This will hold the modules we need to load
+
+			// Loop through the tests
+			for(var index=0,ubound=tests.length; index<ubound; index++) {
+				// Reset the matches flag, it should be false by default
+				var matches = false;
+				// Check if the test mode is 'all'
+				if (tests[index].mode === 'all') {
+					// Use querySelectorAll to run the query, it is a match when the method returned 1 or more items
+					matches = document.querySelectorAll(tests[index].query).length > 0;
+				}
+				// If there is a match we need to store the module in the array of modules to load
+				if (matches) {
+					modules.push(tests[index].module);
+				}
+			}
+			// Check if there are modules to load
+			if (modules.length > 0) {
+				// Load the modules which we've tested and found necessary
+				require(modules, function(modules) {
+					// Loop through the arguments object, it will hold the modules we wanted to load
+					for (var index=0,ubound=arguments.length; index<ubound; index++) {
+						// Create an instance of the module, to do this we need to make sure it is a function
+						if (typeof arguments[index] === 'function') {
+							var module = new arguments[index];
+						}
+					}
+				});
+			}
+
+			// This module doesn't have an instance created, this is why it isn't included in the tests array
+			var hasTwitterIntent = (document.querySelectorAll('.contact-item-twitter').length > 0);
+			if (hasTwitterIntent) {
+				require(['twitter-intent']);
+			}
+			// -ms-viewport in reset.scss zorgt ervoor dat snap mode werkt maar ook voor een bug in ie10 op WP8,
+			// onderstaand script zorgt voor een fix
+			if ('-ms-user-select' in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement('style');
+				msViewportStyle.appendChild(
+					document.createTextNode('@-ms-viewport{width:auto !important;}html.mm-opened.mm-opening .mm-page{height:100% !important;}')
+				);
+				document.getElementsByTagName('head')[0].appendChild(msViewportStyle);
+			}
+		})();
+	</script>
+
+</body>
+</html>

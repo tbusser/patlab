@@ -1,0 +1,750 @@
+<!doctype html>
+<!--[if lte IE 8]>
+<html lang="nl" class="ie no-js">
+<![endif]-->
+<!--[if gt IE 8]>
+<html lang="nl" class="no-js">
+<![endif]-->
+
+<!--[if !IE]> -->
+<html lang="nl" class="no-js">
+<!-- <![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>Contentpagina</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/>
+	<link rel="icon" href="http://tbusser.github.io/patlab/static/site/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/styleguide.css">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/solarized_light.css">
+
+	<!--[if (gt IE 8) | (IEMobile)]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/classList.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz-ie.css">
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/addEventListener.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.indexOf.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.forEach.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.isArray.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.create.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.keys.js"></script>
+	<![endif]-->
+
+	<!--[if !IE]> -->
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<!-- <![endif]-->
+	<script src="http://tbusser.github.io/patlab/static/site/js/vendor/modernizr/modernizr.js"></script>
+</head>
+<body>
+	<ul class="skip-links">
+		<li><a href="#content">Naar de inhoud</a></li>
+		<li><a href="#footer">Naar de footer</a></li>
+	</ul>
+	<article data-module="ui/cookie-bar" class="cookie-bar">
+	<div>
+		<div class="message">
+			Om je beter van dienst te zijn maakt CZ gebruik van cookies. Waarom? <a href="www.cz.nl/cookie">We leggen het je graag uit</a>.
+		</div>
+
+		<button type="button" data-role="close-button" data-action-char="&#xe604;" class="secondary-action place-icon-after">Dit bericht niet meer tonen</button>
+	</div>
+</article>
+
+	<div>
+		<div id="page-overlay"></div>
+		
+<header class="mm-fixed-top page-header">
+	<div class="page-header-top">
+		<div data-module="ui/branding-bar" class="branding-bar">
+			<div class="logo"></div>
+
+
+			<div class="menu-container">
+				<ul class="top-menu">
+					<li><span>Consument</span></li>
+					<li><a href="#">Werkgever</a></li>
+					<li><a href="#">Intermediair</a></li>
+					<li><a href="#">Zorgaanbieder</a></li>
+					<li class="extra"><a href="#">Over CZ</a></li>
+				</ul>
+			</div>
+
+			<form role="search" class="search">
+				<input type="search" name="keywords" placeholder="Zoek in de site&hellip;">
+				<div class="looking-glass"></div>
+				<button type="submit"><span>Zoeken</span></button>
+			</form>
+			<button id="toggle-search" type="button"><span class="visuallyhidden">Toon zoekbalk</span></button>
+		</div>
+	</div>
+	<div class="page-header-bar">
+		<a href="#left-nav" class="hamburger"><span class="visuallyhidden">Menu</span></a>
+		<!--The mobile navigation Markup hidden via css-->
+		<nav id="medi-nav" data-module="ui/hamburger" role="navigation">
+		  	<div class="top-navbar" role="tablist">
+				<div class="tab"><a class="home" href="/"><span>Home</span></a></div>
+				<a class="tab" id="tab1" role="tab" aria-controls="panel1" aria-selected="false" href="#panel1"><span>Zorgverzekering</span></a>
+				<div id="panel1" class="megadropdown" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" aria-expanded="false">
+					<a href="#" data-module="ui/bumper" data-options='{"width":1024,"message":"weet je het zeker?"}'>Bekijk het overzicht van onze zorgverzekeringen</a>
+					<ul>
+						<li>
+							<a href="#">Basisverzekeringen</a>
+							<ul>
+								<li><a href="#">Zorgbewustpolis</a></li>
+								<li><a href="#">Zorg-op-maatpolis</a></li>
+								<li><a href="#">Zorgkeuzepolis</a></li>
+							</ul>
+						</li>
+						<li>
+							<a data-active-page="true" href="#">Aanvullende verzekeringen</a>
+							<ul>
+								<li><a href="#" data-module="ui/bumper" data-options='{"width":524}'>Basis</a></li>
+								<li><a href="#" data-active-page="true">Plus</a></li>
+								<li class="mm-selected"><a href="#" data-module="ui/bumper" data-options='{"width":1024,"message":"weet je het zeker?"}'>Top</a></li>
+								<li><a href="#" data-module="ui/bumper" data-options='{"message":"weet je het nu wel zeker?"}'>Gezinnen</a></li>
+								<li><a href="#">Jongeren</a></li>
+								<li><a href="#">50+</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Tandartsverzekeringen</a>
+							<ul class="invisible-on-large">
+								<li><a href="#">Tandarts</a></li>
+								<li><a href="#">Uitgebreide tandarts</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="descriptive-link" href="#">
+								<div>
+									<span class="descriptive-link-title">Buitenland</span>
+									<span class="description">Verzeker u van zorg in het buitenland</span>
+								</div>
+							</a>
+							<ul class="invisible-on-large">
+								<li><a href="#">Buitenlanden 1</a></li>
+								<li><a href="#">Buitenlanden 2</a></li>
+								<li><a href="#">Buitenlanden 3</a></li>
+								<li><a href="#">Buitenlanden 4</a></li>
+								<li><a href="#">Buitenlanden 5</a></li>
+								<li><a href="#">Buitenlanden 6</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="descriptive-link" href="#">
+								<div>
+									<span class="descriptive-link-title">Collectieve verzekering</span>
+									<span class="description">Korting op uw premie en extra vergedingen</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="dark-side">
+						
+						<article class="action-menu" data-action-block-id="tab1">
+	<section class="link-collection">
+		<div class="beta">Meteen doen</div>
+		<ul>
+			<li><a href="http://www.cz.nl/document.pdf" data-size="(.pdf, 315kB)">Link naar een bestand</a></li>
+			<li><a href="http://www.cz.nl/document.doc" data-size="(.doc, 315kB)">Link naar een ander bestand</a></li>
+			<li><a href="http://www.cz.nl/" class="secondary-action" data-action-char="&#xe606;">Mogelijkheid tot link naar andere content</a></li>
+		</ul>
+		<a href="http://aanmelden.cz.nl/?1234" class="secondary-action-button" data-action-char="&#xe606;">Bereken uw premie</a>
+	</section>
+</article>
+					</div>
+				</div>
+				<a class="tab tab-separator" id="tab2" role="tab" aria-controls="panel2" aria-selected="false" href="#panel2"><span>Vergoedingen</span></a>
+				<div id="panel2" class="megadropdown" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" aria-expanded="false">
+					<a href="/vergoedingen">Vergoedingen</a>
+					<ul>
+						<li>
+							<a href="#">Vergoedingen</a>
+							<ul>
+								<li><a href="#">Vergoedingen 1</a></li>
+								<li><a href="#">Vergoedingen 2</a></li>
+								<li><a href="#">Vergoedingen 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Voorwaarden</a>
+							<ul>
+								<li><a href="#">Voorwaarde 1</a></li>
+								<li><a href="#">Voorwaarde 2</a></li>
+								<li><a href="#">Voorwaarde 3</a></li>
+								<li><a href="#">Voorwaarde 4</a></li>
+								<li><a href="#">Voorwaarde 5</a></li>
+								<li><a href="#">Voorwaarde 6</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<a class="tab tab-separator" id="tab3" role="tab" aria-controls="panel3" aria-selected="false" href="#panel3"><span>Zorgadvies</span></a>
+				<div id="panel3" class="megadropdown" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" aria-expanded="false">
+					<a href="#">Zorgadvies</a>
+					<ul>
+						<li>
+							<a href="#">Vind de beste zorg</a>
+							<ul>
+								<li><a href="#">Zorg vinden</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Advies en begeleiding</a>
+							<ul>
+								<li><a href="#">Wachtlijstbemiddeling</a></li>
+								<li><a href="#">Second opinion</a></li>
+								<li><a href="#">Persoonlijk medisch advies </a></li>
+								<li><a href="#">Zorg regelen</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Afspraken met zorgverleners</a>
+							<ul>
+								<li><a href="#">Afspraken voor beste zorg</a></li>
+								<li><a href="#">Landelijke afspraken</a></li>
+								<li><a href="#">Afspraken over zorginkoop</a></li>
+								<li><a href="#">Waar hebt u recht op?</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="dark-side">
+						
+						<article class="action-menu" data-action-block-id="tab2">
+	<section class="link-collection">
+		<div class="beta">Meteen doen</div>
+		<ul>
+			<li><a href="http://www.cz.nl/document.pdf" data-size="(.pdf, 315kB)">Link naar een bestand</a></li>
+			<li><a href="http://www.cz.nl/document.doc" data-size="(.doc, 315kB)">Link naar een ander bestand</a></li>
+			<li><a href="http://www.cz.nl/" class="secondary-action" data-action-char="&#xe606;">Mogelijkheid tot link naar andere content</a></li>
+		</ul>
+		<a href="http://aanmelden.cz.nl/?1234" class="secondary-action-button" data-action-char="&#xe606;">Bereken uw premie</a>
+	</section>
+</article>
+					</div>
+				</div>
+				<a class="tab tab-separator" id="tab4" role="tab" aria-controls="panel4" aria-selected="false" href="#panel4"><span>Gezondheid</span></a>
+				<div id="panel4" class="megadropdown" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" aria-expanded="false">
+					<a href="#">Gezondheid</a>
+					<ul>
+						<li>
+							<a href="#">Ziektes en aandoeningen</a>
+							<ul>
+								<li><a href="#">Diabetes</a></li>
+								<li><a href="#">Somberheid</a></li>
+								<li><a href="#">Overgewicht</a></li>
+								<li><a href="#">Kanker</a></li>
+								<li><a href="#">Astma</a></li>
+								<li><a href="#">COPD</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Levensfase</a>
+							<ul>
+								<li><a href="#">Levensfase</a></li>
+								<li><a href="#">Jongeren</a></li>
+								<li><a href="#">Zwanger</a></li>
+								<li><a href="#">Gezinnen</a></li>
+								<li><a href="#">50+</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Gezond en fit</a>
+							<ul>
+								<li><a href="#">Medische termen en advies</a></li>
+								<li><a href="#">Goed voorbereid op reis </a></li>
+								<li><a href="#">Sport en bewegen </a></li>
+								<li><a href="#">Afvallen</a></li>
+								<li><a href="#">Mentaal gezond</a></li>
+								<li><a href="#">Stoppen met roken </a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="dark-side">
+						
+						<article class="action-menu" data-action-block-id="tab3">
+	<section class="link-collection">
+		<div class="beta">Meteen doen</div>
+		<ul>
+			<li><a href="http://www.cz.nl/document.pdf" data-size="(.pdf, 315kB)">Link naar een bestand</a></li>
+			<li><a href="http://www.cz.nl/document.doc" data-size="(.doc, 315kB)">Link naar een ander bestand</a></li>
+			<li><a href="http://www.cz.nl/" class="secondary-action" data-action-char="&#xe606;">Mogelijkheid tot link naar andere content</a></li>
+		</ul>
+		<a href="http://aanmelden.cz.nl/?1234" class="secondary-action-button" data-action-char="&#xe606;">Bereken uw premie</a>
+	</section>
+</article>
+					</div>
+				</div>
+				<div class="right">
+					<div class="tab active mm-selected"><a href="#">Klantenservice</a></div>
+					<div class="tab tab-separator"><a href="https://mijn.cz.nl">Mijn CZ<span class="external-link"></span></a></div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<!--[if lte IE 7]>
+	<div class="notification blocking-message">
+		De versie van uw Internet Explorer wordt niet ondersteund. Installeer de laatste versie van Internet Explorer.
+	</div>
+<![endif]-->
+
+		<div class="content-wrapper">
+		<main id="content" role="main" tabindex="-1">
+		
+			<nav data-role="breadcrumb">
+	<ol>
+		<li class="visuallyhidden">
+			<span>U bevindt zich hier:</span>
+		</li>
+		<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="http://www.cz.nl" itemprop="url">
+							<span itemprop="title">Home</span>
+						</a>
+				</li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="http://www.cz.nl/vergoedingen" itemprop="url">
+							<span itemprop="title">Vergoedingen</span>
+						</a>
+				</li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<span>Generalistische Basis GGZ</span>
+				</li>
+	</ol>
+</nav>
+
+<header>
+	<div class="hero-container">
+		<img src="http://lorempixel.com/340/76/food/5/" alt="" class="image-replace" data-width="340" data-src="http://placehold.it/{width}x{height}" data-ratio="1.77777778">
+	</div>
+	<h1>Vergoeding eerstelijns psychologische zorg</h1>
+	<p role="introduction">U hebt hulp nodig voor uw psychische problemen. De eerstelijns gezondheidszorg psycholoog bespreekt met u in enkele sessies hoe u uw problemen praktisch aanpakt.</p>
+</header>
+
+<section>
+	<h2>Wat krijgt u vergoed?</h2>
+	<p>U krijgt de eerste 5 gesprekken vergoed uit uw basisverzekering. Heeft uw psycholoog een contract met ons? Dan vergoeden we 100% van de kosten. Met gecontracteerde zorgverleners hebben we namelijk afspraken gemaakt over kwaliteit en prijzen.</p>
+	<p>Heeft uw psycholoog geen contract met ons? Dan hangt de hoogte van de vergoeding af van uw basisverzekering:</p>
+	<dl>
+		<dt>CZ Zorgbewustpolis:</dt>
+		<dd>50% van het marktconforme tarief</dd>
+		<dt>CZ Zorg-op-maatpolis:</dt>
+		<dd>75% van het marktconforme tarief</dd>
+		<dt>CZ Zorgkeuzepolis:</dt>
+		<dd>100% van het marktconforme tarief</dd>
+	</dl>
+</section>
+
+<section>
+	<h2>Wat is uw eigen bijdrage en eigen risico?</h2>
+	<p>Voor de eerste 5 gesprekken met uw psycholoog is uw eigen bijdrage € 20,- per gesprek. </p>
+	<p>Ook betaalt u over de kosten van de eerste 5 gesprekken <span data-role="explanation" data-term="eigen risico">eigen risico. <sup><a id="term-eigen-risico-anchor" href="#footnotes">1</a></sup></span> U hebt een verplicht eigen risico van € 350,- per jaar (geldt voor iedereen vanaf 18 jaar). Als u uw volledige eigen risico al hebt betaald, krijgt u alles vergoed tot het maximumbedrag waarvoor u bent verzekerd. </p>
+</section>
+
+<section>
+	<h2>Wilt u meer vergoed krijgen?</h2>
+	<p>U kunt uw eigen bijdrage en de kosten voor extra gesprekken met de eerstelijns psycholoog vergoed krijgen uit een <span data-role="explanation" data-term="aanvullende verzekering">aanvullende verzekering <sup><a id="term-aanvullende-verzekering-anchor" href="#footnotes">2</a></sup> </span>. Ook een bezoek aan een inloophuis voor (ex-) kankerpatiënten valt onder de aanvullende verzekering.</p>
+	<p>De hoogte van uw maximale jaarlijkse vergoeding hangt af van uw aanvullende verzekering:</p>
+	<dl>
+		<dt>Jongeren:</dt>
+		<dd>€ 460,-</dd>
+		<dt>Gezinnen:</dt>
+		<dd>€ 350,-</dd>
+		<dt>50+:</dt>
+		<dd>€ 350,-</dd>
+		<dt>Plus:</dt>
+		<dd>€ 460,-</dd>
+		<dt>Top:</dt>
+		<dd>€ 920,-</dd>
+	</dl>
+</section>
+
+<section>
+	<h2>Waar kunt u terecht?</h2>
+	<figure>
+		<div role="image-placeholder" data-src="http://placehold.it/{width}x{height}" class="third" data-ratio="4.5" data-art-direction="1"></div>
+		<noscript>
+			<img src="http://placehold.it/1024x200" alt=""/>
+		</noscript>
+	</figure>
+	<p>Op zoek naar een psycholoog die een contract met ons heeft? <a href="http://aanmelden.cz.nl?123">Vind een psycholoog</a>.</p>
+</section>
+
+<section>
+	<h2>Wat u verder moet weten</h2>
+	<ol>
+		<li>Voor eerstelijns psychologische zorg hebt u een verwijzing nodig van een huisarts, arts verstandelijk gehandicapten, jeugdarts, medisch-specialist, bedrijfsarts, jeugdarts of van Bureau Jeugdzorg. </li>
+		<li>Als u een afspraak mist of niet tijdig afzegt, moet u deze sessie zelf betalen. </li>
+		<li>Relatietherapie, intelligentieonderzoek, dyslexiebehandeling, schoolpsychologische zorg, begeleiding van niet-geneeskundige aard, arbeidsproblematiek en orthopedagogische zorg vallen niet onder de vergoedingen voor eerstelijns psychologische zorg.</li>
+		<li>Hebt u de rekening zelf voorgeschoten? Declareer deze dan via het declaratieformulier of via Mijn CZ.</li>
+	</ol>
+</section>
+
+<section>
+	<h2>Wilt u een verzekering voor eerstelijns psychologische zorg?</h2>
+	<a href="http://aanmelden.cz.nl/?1234" class="primary-action primary-action-icon" data-action-char="&#xe606;">Bereken uw premie</a>
+	<p>
+	Of <a href="http://aanmelden.cz.nl/?123">bekijk onze zorgverzekeringen</a>
+	</p>
+</section>
+
+<ol id="footnotes" data-role="footnotes">
+	<li id="term-eigen-risico">De hoogte van het minimum eigen risico wordt jaarlijks vastgesteld door een overkoepelende organisatie. <a data-role="return-to-content" href="#term-eigen-risico-anchor">terug naar de tekst</a></li>
+	<li id="term-aanvullende-verzekering">Een aanvullende verzekering is niet verplicht en biedt vergoedingen die niet onder de basisverzekering vallen. <a data-role="return-to-content" href="#term-aanvullende-verzekering-anchor">terug naar de tekst</a></li>
+</ol>
+
+<article class="faqs">
+	<h2 class="gamma">Veelgestelde vragen</h2>
+	<section class="faq">
+		<h3 class="title">Second opinion: krijg ik dat vergoed?</h3>
+		<div class="faq-content">
+			<p>Een second opinion is gewoon een consult bij een andere arts of tandarts. De kosten hiervan vergoeden wij op dezelfde manier als die van het consult waarover u een tweede mening wilt. Let op: deze second opinion is dus iets anders dan de beoordeling door <a href="#">Best Docters &copy;</a>.</p>
+			<ul>
+				<li>Wachtlijstbemiddeling</li>
+				<li>Second opinion</li>
+				<li>Persoonlijk medisch advies</li>
+			</ul>
+		</div>
+	</section>
+	<section class="faq">
+		<h3 class="title">Is het mogelijk dat mijn arts niet wil meewerken als ik een second opinion vraag?</h3>
+		<div class="faq-content">
+			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, aperiam, fugiat, laborum, nulla officiis ea reprehenderit sapiente quibusdam in eius consectetur maxime. Consectetur saepe voluptas facere atque ex temporibus repellat.</span><span>Fugit, nemo, debitis, et labore eos provident deserunt aperiam illo suscipit ut ratione ex quod totam maxime fuga sapiente ipsam dolorum quaerat repellendus excepturi. Repellendus, sit sunt praesentium nostrum aliquam.</span></p>
+			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, nulla, aspernatur, debitis necessitatibus at a cum totam iste labore officiis temporibus excepturi odit quasi doloribus omnis nesciunt culpa rerum magni.</span>
+			<span>Dolor, explicabo dolorum velit error eum optio labore neque quos culpa repellendus natus distinctio amet quisquam voluptatem ut veniam laborum quibusdam ducimus sed modi a cum adipisci iste aut mollitia!</span>
+			<span>Perspiciatis, impedit, iure in facilis vitae inventore neque tempora alias laudantium. Doloribus, eligendi praesentium aspernatur ipsum in quam vel eveniet modi. Possimus, et, eaque voluptatem voluptatum laudantium veniam aperiam id.</span></p>
+		</div>
+		<a href="http:www.cz.nl" class="secondary-action" data-action-char="&#xe606;">Bekijk alle vragen over second opinion</a>
+	</section>
+</article>
+
+<section>
+	<section class="gallery two-ankeiler-row">
+		<div class="spacer"></div>
+		<a href="http://aanmelden.cz.nl" class="ankeiler-ext">
+			<h1 class="gamma">Vind de beste zorgverlener bij u in de buurt</h1>
+			<figure>
+				<div role="image-placeholder" data-src="http://placehold.it/{width}x{height}" data-width="340" data-ratio="2.5"></div>
+				<noscript>
+					<img src="http://placehold.it/340x136" alt="">
+				</noscript>
+			</figure>
+			<p>U hebt zorg, hulpmiddelen of medicijnen nodig. Waar kunt u het beste terecht? En liefst zo dicht mogelijk in uw buurt? We helpen u de juiste keuze te maken.</p>
+		</a>
+		<div class="spacer"></div>
+		<a href="http://www.cz.nl" class="ankeiler-ext">
+			<h1 class="gamma">Somber? Voorkom dat het erger wordt</h1>
+			<figure>
+				<div role="image-placeholder" data-src="http://lorempixel.com/{width}/{height}/nature/1/" data-width="340" data-ratio="2.5"></div>
+				<noscript>
+					<img src="http://lorempixel.com/340/136/nature/1/" alt="">
+				</noscript>
+			</figure>
+			<p>Bent u gewoon even somber of is er meer aan de hand? Doe een korte test. Dan krijgt u een  persoonlijk rapport met tips en adviezen.</p>
+		</a>
+	</section>
+</section>
+﻿<article class="contact-block">
+	<div class="first">
+		<section class="contact-item contact-item-phone">
+		<h1>Bel ons</h1>
+		<dl>
+			<dt>Telefoonnummer</dt>
+			<dd class="call-to-action">0900 0949</dd>
+			<dt>Tarief</dt>
+			<dd>Gratis nummer</dd>
+			<dt>Bereikbaar op</dt>
+			<dd>Maandag t/m vrijdag</dd>
+			<dt>Openingstijden</dt>
+			<dd>8:00-18:00 uur</dd>
+		</dl>
+		</section>
+
+		<section class="contact-item contact-item-chat">
+		<span class="lc5element"> <!-- lcType="page" lcAccount="zJow2zpJAAA=" lcTag="CZ" --> </span>
+		<span class="lc5element"> <!-- lcType="mod" lcKey="LTR" lcGroup="1" --> </span>
+		<script charset="ISO-8859-1" type="text/javascript" defer="defer" src="//c53.livecom.net/5g/ws/zJow2zpJAAA"></script>
+		<h1>Chat met ons</h1>
+		<dl>
+			<dt>Chat</dt>
+			<dd class="call-to-action">
+			<span class="lc5element">
+				<!-- lcType="link" lcGroup="2" lcChan="LWC;LVC;LVI" lcOnval="Start een chat" lcOffval="Chat tijdelijk offline" -->
+			</span>
+			</dd>
+			<dt>Bereikbaar op</dt>
+			<dd>Maandag t/m vrijdag</dd>
+			<dt>Openingstijden</dt>
+			<dd>8:00-18:00 uur</dd>
+		</dl>
+		</section>
+
+		<section class="contact-item contact-item-post">
+		<h1>Stuur een brief</h1>
+		<dl>
+			<dt>Postbus</dt>
+			<dd class="call-to-action">Postbus 90152</dd>
+			<dt>Adres</dt>
+			<dd>5000LD Tilburg</dd>
+		</dl>
+		</section>
+
+		<section class="contact-item contact-item-visit">
+		<h1>Bezoek ons</h1>
+		<dl>
+			<dt>Locatie</dt>
+			<dd class="call-to-action">Tilburg</dd>
+			<dt>Adres</dt>
+			<dd>Ringbaan west 236</dd>
+			<dt>Bereikbaar op</dt>
+			<dd>Maandag t/m vrijdag</dd>
+			<dt>Openingstijden</dt>
+			<dd>9:00-17:30 uur</dd>
+			<dt>Plan je route op Google Maps</dt>
+			<dd><a href="https://www.google.nl/maps/preview/dir//Ringbaan+West+236,+Tilburg,+The+Netherlands/@51.5578414,5.0646836,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c6be3e1cb67a57:0x344fa6278f2d9aa6!2m2!1d5.0646836!2d51.5578414?hl=nl" target="_blank">Plan uw route</a></dd>
+		</dl>
+		</section>
+
+		<section class="contact-item contact-item-twitter">
+		<h1>Stel uw vraag op Twitter</h1>
+		<dl>
+			<dt>Postbus</dt>
+			<dd class="call-to-action"><a href="https://twitter.com/intent/tweet?screen_name=cz_nl">Stel een vraag</a></dd>
+			<dt>twitter naam</dt>
+			<dd>@cz_nl</dd>
+			<dt>Bereikbaar op</dt>
+			<dd>Maandag t/m vrijdag</dd>
+			<dt>Openingstijden</dt>
+			<dd>9:00-17:30 uur</dd>
+		</dl>
+		</section>
+
+		<section class="contact-item contact-item-issue-mail">
+		<h1>Stuur een klachtenbrief</h1>
+		<dl>
+			<dt>Postbus</dt>
+			<dd class="call-to-action">Postbus 4349</dd>
+			<dt>Adres</dt>
+			<dd>5004JD Tilburg</dd>
+			<dt>Ontvanger</dt>
+			<dd>t.a.v. Klachtenco&ouml;rdinator</dd>
+		</dl>
+		</section>
+
+		<section class="contact-item contact-item-issue-form">
+		<h1>Klacht melden</h1>
+		<p>Wilt u direct een klacht melden?</p>
+		<dl>
+			<dt>Meld een klacht</dt>
+			<dd class="call-to-action"><a href="http://www.cz.nl/null">Meld een klacht</a></dd>
+		</dl>
+		</section>
+	</div>
+	<div class="second">
+		<section class="to-question-form">
+		<h1>Stel uw vraag via e-mail</h1>
+		<p>Hebt u vragen? We helpen u graag.</p>
+		<a href="http://www.cz.nl/null" class="primary-action primary-action-medium primary-action-icon" data-action-char="&#xe606;">Stel uw vraag via e-mail</a>
+		</section>
+		<section class="contact-link contact-link-phone">
+		<h1></h1>
+		<a href="http://www.cz.nl/null">Directe telefoonnummers</a>
+		</section>
+		<section class="contact-link contact-link-chat">
+		<h1></h1>
+		<a href="http://www.cz.nl/null">Start een chat</a>
+		</section>
+		<section class="contact-link contact-link-visit">
+		<h1></h1>
+		<a href="http://www.cz.nl/null">Bezoek een Kantoor</a>
+		</section>
+		<section class="contact-link contact-link-twitter">
+		<h1></h1>
+		<a href="http://www.cz.nl/null">Stel een vraag via Twitter</a>
+		</section>
+		<section class="contact-link contact-link-search-mobile-office">
+		<h1></h1>
+		<a href="http://www.cz.nl/null">Zoek een mobiel kantoor</a>
+		</section>
+		<section class="contact-link contact-link-search-post">
+		<h1></h1>
+		<a href="http://www.cz.nl/null">Zoek een postadres op</a>
+		</section>
+		<section class="contact-link contact-link-issue">
+		<h1></h1>
+		<a href="http://www.cz.nl/null">Meld een klacht</a>
+		</section>
+	</div>
+</article>
+		</main>
+		</div>
+		<!--
+  The element with the ID 'footer' is the element which will receive focus when the user uses a skip link to go directly to the footer.
+-->
+<footer class="page-footer"  id="footer" tabindex="-1">
+	<nav>
+		<h2 class="visuallyhidden nocontent">Footer navigatie</h2>
+		<div class="gallery">
+			<section>
+				<h3 class="delta">Klantenservice</h3>
+				<ul>
+					<li><a href="#" class="footer-icon phone"><span>Bel ons</span></a></li>
+					<li><a href="#" class="footer-icon chat"><span>Chat met ons</span></a></li>
+					<li><a href="#" class="footer-icon mail"><span>Stuur uw vraag</span></a></li>
+					<li><a href="#" class="footer-icon twitter"><span>Stel uw vraag via Twitter</span></a></li>
+					<li><a href="#" class="footer-icon visit"><span>Bezoek een kantoor</span></a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 class="delta">Volg CZ</h3>
+				<ul>
+					<li><a href="#"><span>Abonneer u op een nieuwsbrief</span></a></li>
+					<li><a href="http://www.twitter.com" class="footer-icon twitter"><span>Volg ons op Twitter</span></a></li>
+					<li><a href="http://www.facebook.com" class="footer-icon facebook"><span>Bezoek ons op Facebook</span></a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 class="delta">Over CZ</h3>
+				<ul>
+					<li><a href="#"><span>Vind een baan bij CZ</span></a></li>
+					<li><a href="#"><span>Bekijk onze MVO-projecten</span></a></li>
+					<li><a href="#"><span>Meld uw project bij CZ fonds</span></a></li>
+				</ul>
+			</section>
+		</div>
+	</nav>
+
+	<section class="footer-awards">
+		<h2 class="visuallyhidden nocontent">Awards die CZ heeft ontvangen</h2>
+		<div class="gallery">
+			<div class="media award">
+				<img src="http://tbusser.github.io/patlab/static/site/img/header_footer/award_wua.png" alt="" class="img">
+				<div class="bd">
+					<h3 class="delta">CZ is nr. 1 in online service</h3>
+					<p>Dat blijkt uit de Web Service scan van het onafhankelijke onderzoeksbureau WUA</p>
+				</div>
+			</div>
+			<div class="media award">
+				<img src="http://tbusser.github.io/patlab/static/site/img/header_footer/award_ri.png" alt="" class="img">
+				<div class="bd">
+					<h3 class="delta">Uitstekende situatie</h3>
+					<p>CZ staat als enige zorgverzekeraar in de top 10 van de reputatieranglijst van het Repetation Institute</p>
+				</div>
+			</div>
+			<div class="media award">
+				<img src="http://tbusser.github.io/patlab/static/site/img/header_footer/award_kkv.png" alt="" class="img">
+				<div class="bd">
+					<h3 class="delta">Klantgericht</h3>
+					<p>Bij CZ draait alles om omze klanten. Daarom hebben we het Kwaliteitskeurmerk Klantgericht Verzekeren gekregen.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="footer-logo-links-container">
+		<div class="logo-inner-container">
+			<ul class="flat-link-list">
+				<li><a href="#">disclaimer</a></li>
+				<li><a href="#">privacy</a></li>
+				<li><a href="#" lang="en">English</a></li>
+				<li><a href="#">sitemap</a></li>
+			</ul>
+		</div>
+        <div class="logo"></div>
+	</div>
+</footer>
+
+	</div>
+		<script src="http://tbusser.github.io/patlab/static/site/js/vendor/jrburke/require.js"></script>
+	<!-- <script src="http://tbusser.github.io/patlab/static/site/js.min/built.js"></script> -->
+	<script>
+		require.config({
+			baseUrl: 'http://tbusser.github.io/patlab/static/site/js/cz',
+			paths: {
+				'jquery': '../vendor/jquery/jquery',
+				'modernizr': '../vendor/modernizr/modernizr-wrapper',
+				'conditioner': '../vendor/rschennink/conditioner',
+				'mmenu': '../vendor/fredheusschen/jquery.mmenu.all',
+				'dynamic-iframe':'../vendor/medicinfo/dyframe',
+				'dynamic-iframe-host':'../vendor/medicinfo/dyframe_host',
+				'twitter-intent': '../vendor/twitter/widgets'
+			}
+		});
+		requirejs(['jquery','conditioner'], function($,conditioner){
+			'use strict';
+			conditioner.loadModules(document);
+		});
+		(function() {
+			'use strict';
+
+			// This array holds the tests for the AMD modules which might be needed. Each entry is an object
+			// with the following properties:
+			//	- mode		: Right now 'all' is the only allowed value, it means the document.querySelectorAll method should be used to
+			//				run the query.
+			//	- query		: The query to run using the querySelectorAll method
+			//	- module	: The name of the module to load when the query returns one or more elements
+			var tests = [
+					{mode: 'all', query: 'div[role="image-placeholder"], img.image-replace', module: 'ui/images-ext'},
+					{mode: 'all', query: '[data-role="explanation"]', module: 'ui/whatsthat'},
+					{mode: 'all', query: '.contact-item-twitter', module: 'twitter-intent'},
+					{mode: 'all', query: '.faq', module: 'ui/faq', name: 'faq'},
+					{mode: 'all', query: '#scroll-top-target', module: 'ui/scrollToTop'},
+					{mode: 'all', query: '[data-scroll-to-target]', module: 'ui/alphabetList'},
+					{mode: 'all', query: '[data-stick-to-top]', module: 'ui/stick-to-top'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe-host'}
+				],
+				modules = []; // This will hold the modules we need to load
+
+			// Loop through the tests
+			for(var index=0,ubound=tests.length; index<ubound; index++) {
+				// Reset the matches flag, it should be false by default
+				var matches = false;
+				// Check if the test mode is 'all'
+				if (tests[index].mode === 'all') {
+					// Use querySelectorAll to run the query, it is a match when the method returned 1 or more items
+					matches = document.querySelectorAll(tests[index].query).length > 0;
+				}
+				// If there is a match we need to store the module in the array of modules to load
+				if (matches) {
+					modules.push(tests[index].module);
+				}
+			}
+			// Check if there are modules to load
+			if (modules.length > 0) {
+				// Load the modules which we've tested and found necessary
+				require(modules, function(modules) {
+					// Loop through the arguments object, it will hold the modules we wanted to load
+					for (var index=0,ubound=arguments.length; index<ubound; index++) {
+						// Create an instance of the module, to do this we need to make sure it is a function
+						if (typeof arguments[index] === 'function') {
+							var module = new arguments[index];
+						}
+					}
+				});
+			}
+
+			// This module doesn't have an instance created, this is why it isn't included in the tests array
+			var hasTwitterIntent = (document.querySelectorAll('.contact-item-twitter').length > 0);
+			if (hasTwitterIntent) {
+				require(['twitter-intent']);
+			}
+			// -ms-viewport in reset.scss zorgt ervoor dat snap mode werkt maar ook voor een bug in ie10 op WP8,
+			// onderstaand script zorgt voor een fix
+			if ('-ms-user-select' in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement('style');
+				msViewportStyle.appendChild(
+					document.createTextNode('@-ms-viewport{width:auto !important;}html.mm-opened.mm-opening .mm-page{height:100% !important;}')
+				);
+				document.getElementsByTagName('head')[0].appendChild(msViewportStyle);
+			}
+		})();
+	</script>
+
+</body>
+</html>

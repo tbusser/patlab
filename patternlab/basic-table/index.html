@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/>
+	<link rel="icon" href="http://tbusser.github.io/patlab/static/site/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/styleguide.css">
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/patternlab/solarized_light.css">
+
+	<!--[if (gt IE 8) | (IEMobile)]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/classList.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz-ie.css">
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/addEventListener.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.indexOf.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.forEach.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Array.isArray.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.create.js"></script>
+	<script src="http://tbusser.github.io/patlab/static/site/js/shims/Object.keys.js"></script>
+	<![endif]-->
+
+	<!--[if !IE]> -->
+	<link rel="stylesheet" href="http://tbusser.github.io/patlab/static/site/css/cz.css">
+	<!-- <![endif]-->
+	<script src="http://tbusser.github.io/patlab/static/site/js/vendor/modernizr/modernizr.js"></script>
+</head>
+<body class="sg-body">
+	<article>
+		<article class="sg-article">
+	<section class="sg-section">
+		<h1 class="sg-subheader">Basis tabel</h1>
+		<p>
+			Dit is een basis tabel waar alle layoutvormen voor een tabel gebruikt kan worden. `rowspan` en `colspan` zijn toegestaan.
+			Tabellen worden nooit 100% uitgevuld. de breedte is wat het breedste element nodig heeft.
+
+			De `table` moet in een `div.responsive-table-container` staan om op kleinere schermen de horizontale scrollbar te tonen.
+		</p>
+
+		<h3>Zebra</h3>
+		<p>
+			Voor het verbeteren van de leestbaarheid kan er op de `table` de klasse `zebra` worden gezet. Op de even rijen wordt dan een
+			donkere achtergrond getoond.
+		</p>
+		<p>
+		<strong>N.B. De zebra functionaliteit werkt niet op IE8!</strong>
+		</p>
+
+		<h3>Numerieke toepassing</h3>
+		<p>
+			Voor de laatste versie browsers is het cijfer weergave in de tabel aangepast. De cijfers zijn op een lijn en even breed gespatieerd.
+			De oudere browsers zullen de textuele cijfers zien.
+		</p>
+
+		<p>
+			De cellen met cijfers moeten met de hand worden uitgelijnd. Zie de volgende paragraaf hoe je dat doet.
+		</p>
+
+		<h3>Uitlijning tekst</h3>
+		<p>
+			Standaard is een tabel <strong>links uitgelijnd</strong>. Die uitlijning is aan te passen door op de <code>td</code> een van de volgende klassen te zetten.
+		</p>
+		<p>
+			<dl>
+				<dt><code>text-align-left</code></dt><dd>Tekst links lijnend</dd>
+				<dt><code>text-align-center</code></dt><dd>Tekst gecentreerd</dd>
+				<dt><code>text-align-right</code></dt><dd>Tekst rechts lijnend</dd>
+			</dl>
+		</p>
+
+		<h3>`Wrapping` tekst</h3>
+		<p>
+			Om tekst binnen een cel automatisch te laten afbreken, moet op het <code>td</code> element de klasse `wrap` worden gezet.
+			Zonder deze klasse moeten er <code>br</code> elementen worden toegevoegd om handmatige afbrekingen te maken.
+		</p>
+
+		<h3>Optioneel: caption</h3>
+		<p>
+			Beschrijving van de tabel. Handig als er vanuit de tekst naar een specifieke tabel wordt gerefereerd.
+		</p>
+		<div class="sg-example">
+			<div class="responsive-table-container">
+				<table class="zebra">
+					<caption>Voorbeeld van een numerieke tabel</caption>
+					<thead>
+						<tr>
+							<th>Verzekering</th>
+							<th>Eigen risico</th>
+							<th>Premie</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<th rowspan="2">Zorgbewustpolis (natura)</th>
+						<td>&euro; 360,-</td>
+						<td>&euro; 92,55</td>
+					</tr>
+					<tr>
+						<td>&euro; 860,-</td>
+						<td>&euro; 71,92</td>
+					</tr>
+					<tr>
+						<th rowspan="6">Zorg-op-maatpolis (natura)</th>
+						<td>&euro; 360,-</td>
+						<td>&euro; 95,90 </td>
+					</tr>
+					<tr>
+						<td>&euro; 460,- </td>
+						<td>&euro; 90,27 </td>
+					</tr>
+					<tr>
+						<td>&euro; 560,-</td>
+						<td>&euro; 85,40 </td>
+					</tr>
+					<tr>
+						<td>&euro; 660,-</td>
+						<td>&euro; 81,27 </td>
+					</tr>
+					<tr>
+						<td>&euro; 660,-</td>
+						<td>&euro; 77,90 </td>
+					</tr>
+					<tr>
+						<td>&euro; 660,-</td>
+						<td>&euro; 75,27 </td>
+					</tr>
+					<tr>
+						<th rowspan="7">Zorgkeuzepolis (restitutie)</th>
+						<td>&euro; 360,-</td>
+						<td>&euro; 101,20</td>
+					</tr>
+					<tr>
+						<td>&euro; 460,- </td>
+						<td>&euro; 95,57</td>
+					</tr>
+					<tr>
+						<td>&euro; 560,-</td>
+						<td>&euro; 90,70 </td>
+					</tr>
+					<tr>
+						<td>&euro; 660,-</td>
+						<td>&euro; 86,57 </td>
+					</tr>
+					<tr>
+						<td>&euro; 760,-</td>
+						<td>&euro; 83,20 </td>
+					</tr>
+					<tr>
+						<td>&euro; 860,-</td>
+						<td>&euro; 80,57</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="responsive-table-container">
+				<table>
+					<caption>Dit is een brede versie</caption>
+					<thead>
+						<tr>
+							<th>Prestatie</th>
+							<th>Prestatie code</th>
+							<th>Tarief ovk A</th>
+							<th>Tarief ovk B</th>
+							<th>Tarief ovk C</th>
+							<th>Eigen bijdrage </th>
+							<th>Rubriek 412</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<th>Uur kraamzorg</th>
+						<td>196201 </td>
+						<td>&euro;45,37 </td>
+						<td>&euro;43,10</td>
+						<td>&euro;40,83</td>
+						<td>&euro;4,10 </td>
+						<td>011</td>
+					</tr>
+					<tr>
+						<th>Inschrijving</th>
+						<td>196202 </td>
+						<td>&euro;21,04 </td>
+						<td>&euro;21,04 </td>
+						<td>&euro;21,04 </td>
+						<td></td>
+						<td>011</td>
+					</tr>
+					<tr>
+						<th>Intake thuis</th>
+						<td>196203 </td>
+						<td>&euro;63,12 </td>
+						<td>&euro;63,12 </td>
+						<td>&euro;63,12 </td>
+						<td></td>
+						<td>011</td>
+					</tr>
+					<tr>
+						<th>Intake telefonisch</th>
+						<td>196205 </td>
+						<td>&euro;21,05 </td>
+						<td>&euro;21,05 </td>
+						<td>&euro;21,05 </td>
+						<td></td>
+						<td>011 </td>
+					</tr>
+					<tr>
+						<th>Per partusassistentie</th>
+						<td>196204 </td>
+						<td>&euro;84,17 </td>
+						<td>&euro;84,17 </td>
+						<td>&euro;84,17 </td>
+						<td></td>
+						<td>011 </td>
+					</tr>
+					<tr>
+						<th>Uur partusassistentie</th>
+						<td>196206 </td>
+						<td>&euro;45,37 </td>
+						<td>&euro;43,10 </td>
+						<td>&euro;40,83 </td>
+						<td>&euro;4,10 </td>
+						<td>011</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="sg-instructions">
+			<div class="sg-code">
+				<pre class="hljs"><code class="hljs xml">
+                    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"responsive-table-container"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">caption</span>&gt;</span>Dit is een brede versie<span class="hljs-tag">&lt;/<span class="hljs-title">caption</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Prestatie<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Prestatie code<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Tarief ovk A<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Tarief ovk B<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Tarief ovk C<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Eigen bijdrage <span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Rubriek 412<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Uur kraamzorg<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>196201 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€45,37 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€43,10<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€40,83<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€4,10 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>011<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Inschrijving<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>196202 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€21,04 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€21,04 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€21,04 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>011<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Intake thuis<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>196203 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€63,12 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€63,12 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€63,12 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>011<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Intake telefonisch<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>196205 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€21,05 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€21,05 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€21,05 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>011 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Per partusassistentie<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>196204 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€84,17 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€84,17 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€84,17 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>011 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Uur partusassistentie<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>196206 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€45,37 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€43,10 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€40,83 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>€4,10 <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>011<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                </code></pre>
+			</div>
+			<div class="sg-notes">
+			</div>
+		</div>
+	</section>
+</article>
+	</article>
+	<script src="http://tbusser.github.io/patlab/static/patternlab/code-examples.js"></script>
+		<script src="http://tbusser.github.io/patlab/static/site/js/vendor/jrburke/require.js"></script>
+	<!-- <script src="http://tbusser.github.io/patlab/static/site/js.min/built.js"></script> -->
+	<script>
+		require.config({
+			baseUrl: 'http://tbusser.github.io/patlab/static/site/js/cz',
+			paths: {
+				'jquery': '../vendor/jquery/jquery',
+				'modernizr': '../vendor/modernizr/modernizr-wrapper',
+				'conditioner': '../vendor/rschennink/conditioner',
+				'mmenu': '../vendor/fredheusschen/jquery.mmenu.all',
+				'dynamic-iframe':'../vendor/medicinfo/dyframe',
+				'dynamic-iframe-host':'../vendor/medicinfo/dyframe_host',
+				'twitter-intent': '../vendor/twitter/widgets'
+			}
+		});
+		requirejs(['jquery','conditioner'], function($,conditioner){
+			'use strict';
+			conditioner.loadModules(document);
+		});
+		(function() {
+			'use strict';
+
+			// This array holds the tests for the AMD modules which might be needed. Each entry is an object
+			// with the following properties:
+			//	- mode		: Right now 'all' is the only allowed value, it means the document.querySelectorAll method should be used to
+			//				run the query.
+			//	- query		: The query to run using the querySelectorAll method
+			//	- module	: The name of the module to load when the query returns one or more elements
+			var tests = [
+					{mode: 'all', query: 'div[role="image-placeholder"], img.image-replace', module: 'ui/images-ext'},
+					{mode: 'all', query: '[data-role="explanation"]', module: 'ui/whatsthat'},
+					{mode: 'all', query: '.contact-item-twitter', module: 'twitter-intent'},
+					{mode: 'all', query: '.faq', module: 'ui/faq', name: 'faq'},
+					{mode: 'all', query: '#scroll-top-target', module: 'ui/scrollToTop'},
+					{mode: 'all', query: '[data-scroll-to-target]', module: 'ui/alphabetList'},
+					{mode: 'all', query: '[data-stick-to-top]', module: 'ui/stick-to-top'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe'},
+					{mode: 'all', query: 'iframe[name^="dyniframe_"]', module: 'dynamic-iframe-host'}
+				],
+				modules = []; // This will hold the modules we need to load
+
+			// Loop through the tests
+			for(var index=0,ubound=tests.length; index<ubound; index++) {
+				// Reset the matches flag, it should be false by default
+				var matches = false;
+				// Check if the test mode is 'all'
+				if (tests[index].mode === 'all') {
+					// Use querySelectorAll to run the query, it is a match when the method returned 1 or more items
+					matches = document.querySelectorAll(tests[index].query).length > 0;
+				}
+				// If there is a match we need to store the module in the array of modules to load
+				if (matches) {
+					modules.push(tests[index].module);
+				}
+			}
+			// Check if there are modules to load
+			if (modules.length > 0) {
+				// Load the modules which we've tested and found necessary
+				require(modules, function(modules) {
+					// Loop through the arguments object, it will hold the modules we wanted to load
+					for (var index=0,ubound=arguments.length; index<ubound; index++) {
+						// Create an instance of the module, to do this we need to make sure it is a function
+						if (typeof arguments[index] === 'function') {
+							var module = new arguments[index];
+						}
+					}
+				});
+			}
+
+			// This module doesn't have an instance created, this is why it isn't included in the tests array
+			var hasTwitterIntent = (document.querySelectorAll('.contact-item-twitter').length > 0);
+			if (hasTwitterIntent) {
+				require(['twitter-intent']);
+			}
+			// -ms-viewport in reset.scss zorgt ervoor dat snap mode werkt maar ook voor een bug in ie10 op WP8,
+			// onderstaand script zorgt voor een fix
+			if ('-ms-user-select' in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement('style');
+				msViewportStyle.appendChild(
+					document.createTextNode('@-ms-viewport{width:auto !important;}html.mm-opened.mm-opening .mm-page{height:100% !important;}')
+				);
+				document.getElementsByTagName('head')[0].appendChild(msViewportStyle);
+			}
+		})();
+	</script>
+
+</body>
+</html>
